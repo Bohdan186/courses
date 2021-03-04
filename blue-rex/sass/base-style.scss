@@ -1,0 +1,142 @@
+//==============================================
+//                  VARIABLES
+//==============================================
+
+// $primColor1: ;
+
+//==============================================
+//                  BODY
+//==============================================
+
+body {
+
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.4;
+	color: #535353;
+}
+
+
+//==============================================
+//                  HEADERS
+//==============================================
+	
+h1,h2,h3,h4,h5,h6 {
+
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	color: #2d2b27;
+	margin-bottom: 30px;
+}
+
+h1 {
+
+	font-size: 6vw;
+}
+
+h2 {
+
+	font-size: 38px;
+}
+
+h3 {
+   
+	font-size: 26px;
+}
+
+h4 {
+
+	font-size: 20px;
+}
+
+h5 {
+   
+	font-size: 15px;
+}
+
+h6 {
+  
+	font-size: 14px;
+}
+
+
+//==============================================
+//                  PARAGRAPHS
+//==============================================
+
+p{
+
+	&:not(:last-child){
+
+		margin-bottom: 20px;
+	}
+}
+
+
+//============================================================
+//                          BUTTONS
+//============================================================
+
+.button, .button2, .button-large, .button-bordered {
+
+	transition: background-color 0.4s ease;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	color: #fff;
+	text-transform: uppercase;
+	background-color: #171717;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button {
+
+	font-size: 10px;
+	min-width: 116px;
+	min-height: 40px;
+	border:  1px solid #171717;
+	border-radius: 20px;
+	
+	&:hover{
+		background-color: #858585;
+	}
+
+	z-index: 1;
+	position: relative;
+
+
+}
+
+.button2 {
+
+	font-size: 12px;
+	min-width: 245px;
+	min-height: 60px;
+	border:  1px solid #fff;
+	border-radius: 30px;
+	
+	&:hover{
+		background-color: rgb(224, 224, 224);
+	}
+
+	color:#171717;
+	background-color: #fff;
+}
+
+.button-large {
+	border-radius: 30px;
+	min-width: 174px;
+	min-height: 60px;
+	font-weight: 600;
+}
+.button-bordered{
+	background: #fff;
+	color: #1a1a1a;
+	border: 1px solid #d9c8aa;
+
+	&:hover{
+		background-color: #dfc49693;
+	}
+}

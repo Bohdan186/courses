@@ -44,7 +44,7 @@ table {
 *, *::after, *::before, *:hover{
     box-sizing: border-box;
 }
-button:focus, input:focus, a:focus, textarea:focus{
+button:focus, input:focus, a:focus{
 	outline: none;
 }
 button{
@@ -60,10 +60,4 @@ img{
 	max-width: 100%;
 	height: auto;
 	vertical-align: middle;
-}
-
-form, input, textarea, select {
-	font-family: inherit;
-	font-size: inherit;
-	color: inherit;
 }

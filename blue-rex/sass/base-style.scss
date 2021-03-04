@@ -1,142 +1,160 @@
-//==============================================
-//                  VARIABLES
-//==============================================
+// ------------------------------------------------------------------------------------------------
+// Base Style
+// ------------------------------------------------------------------------------------------------
 
-// $primColor1: ;
+// font-family: 'Palatino Linotype', sans-serif;
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Poppins', sans-serif;
 
-//==============================================
-//                  BODY
-//==============================================
+// ------------------------------------------
+// Variables
+// ------------------------------------------
+
+$primColor1: #4b2d7f;
+$primColor2: #F42267;
+$transition: all .4s ease;
+
+// ------------------------------------------
+// Body
+// ------------------------------------------
 
 body {
-
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 1.4;
-	color: #535353;
+	color: #1d1d1d;
 }
 
-
-//==============================================
-//                  HEADERS
-//==============================================
+// ------------------------------------------
+// Headers
+// ------------------------------------------
 	
 h1,h2,h3,h4,h5,h6 {
-
-	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
-	color: #2d2b27;
+	color: #484848;
 	margin-bottom: 30px;
 }
 
 h1 {
-
-	font-size: 6vw;
+	font-size: 64px;
+	line-height: 1.2;
 }
 
 h2 {
-
-	font-size: 38px;
+	font-size: 48px;
 }
 
 h3 {
-   
-	font-size: 26px;
+	font-size: 25px;
 }
 
-h4 {
-
-	font-size: 20px;
+.title {
+	
+	.above-title {
+		font-family: 'Palatino Linotype', sans-serif;
+		font-style: italic;
+		margin-bottom: 10px;
+	}
 }
-
-h5 {
-   
-	font-size: 15px;
-}
-
-h6 {
-  
-	font-size: 14px;
-}
-
 
 //==============================================
 //                  PARAGRAPHS
 //==============================================
 
-p{
-
-	&:not(:last-child){
-
-		margin-bottom: 20px;
-	}
+p {
+	margin-bottom: 20px;
 }
 
+// ------------------------------------------
+// Links
+// ------------------------------------------
 
-//============================================================
-//                          BUTTONS
-//============================================================
-
-.button, .button2, .button-large, .button-bordered {
-
-	transition: background-color 0.4s ease;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
-	color: #fff;
-	text-transform: uppercase;
-	background-color: #171717;
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
+a {
+	color: inherit;
+	transition: $transition;
 }
+
+// ------------------------------------------
+// Buttons
+// ------------------------------------------
 
 .button {
-
-	font-size: 10px;
-	min-width: 116px;
-	min-height: 40px;
-	border:  1px solid #171717;
-	border-radius: 20px;
-	
-	&:hover{
-		background-color: #858585;
-	}
-
-	z-index: 1;
-	position: relative;
-
-
-}
-
-.button2 {
-
-	font-size: 12px;
-	min-width: 245px;
-	min-height: 60px;
-	border:  1px solid #fff;
-	border-radius: 30px;
-	
-	&:hover{
-		background-color: rgb(224, 224, 224);
-	}
-
-	color:#171717;
-	background-color: #fff;
-}
-
-.button-large {
-	border-radius: 30px;
-	min-width: 174px;
-	min-height: 60px;
+    display: inline-block;
+	font-size: 16px;
 	font-weight: 600;
+	text-transform: uppercase;
+	color: #fff;
 }
-.button-bordered{
-	background: #fff;
-	color: #1a1a1a;
-	border: 1px solid #d9c8aa;
 
-	&:hover{
-		background-color: #dfc49693;
+.primary-button {
+	padding: 23px 48px;
+	border-radius: 23px;
+	box-shadow: 1.169px 3.825px 16px 0px rgba(1, 2, 2, 0.35);
+}
+
+.article-button {
+	padding: 18px 24px;
+	border-radius: 10px;
+	&.btn-bgcolor1 {
+		box-shadow: 0px 10px 0px 0px #A57EE9;
+	}
+	
+	&.btn-bgcolor2 {
+		box-shadow: 0px 10px 0px 0px #FF5990;
 	}
 }
+
+.btn-bgcolor1 {
+	background-color: $primColor1;
+
+	&:hover {
+		background-color: #5f34aa;
+	}
+}
+
+.btn-bgcolor2 {
+	background-color: $primColor2;
+
+	&:hover {
+		background-color: #ff1161;
+	}
+}
+
+.button-wrapper {
+
+    .button {
+
+		&:first-child {
+			margin-right: 28px;
+		}
+    }
+}
+
+// ------------------------------------------
+// Form
+// ------------------------------------------
+
+form,
+input,
+textarea,
+select {
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+}
+
+// ------------------------------------------
+// Color Scheme
+// ------------------------------------------
+
+.color-scheme-light {
+  
+	h1,h2,h3,h4,h5,h6,i {
+	  color: #FFF;
+	}
+	
+	p, ul {
+	  color: #fff;
+	}
+  }

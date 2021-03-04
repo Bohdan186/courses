@@ -1,24 +1,90 @@
-//==============================================
-//            MIN WIDTH 576px ( SM > ... )
-//==============================================
+// ------------------------------------------------------------------------------------------------
+// Responsive
+// ------------------------------------------------------------------------------------------------
 
-@media (min-width: 576px){
-    
+// ------------------------------------------
+// Max Width 576px ( ... < 576px)
+// ------------------------------------------
+
+@media (max-width: 576px) {
+
+    .first-screen {
+        text-align: center;
+    }
+
+    .button-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .button {
+
+            &:first-child {
+                margin: 0;
+                margin-bottom: 28px;
+            }
+        }
+    }
 }
 
+// ------------------------------------------
+// Max Width 768px ( ... < 768px)
+// ------------------------------------------
 
-//==============================================
-//            MAX WIDTH 768px ( ... < MD )
-//==============================================
+@media (max-width: 768px) {
 
-@media (max-width: 768px){
-    
+    .button-wrapper {
+        margin-left: 0;
+    }
+
 }
 
-//==============================================
-//            MAX WIDTH 992px ( ... < LG )
-//==============================================
+// ------------------------------------------
+// Max Width 992px ( ... < 992px)
+// ------------------------------------------
 
-@media (max-width: 992px){
+@media (max-width: 992px) {
 
+    .header-menu {
+        display: none;
+    }
+
+    .first-screen {
+
+        .above-title {
+            font-size: 36px;
+        }
+    
+        h1 {
+            font-size: 50px;
+        }
+    
+        .subtitle {
+            margin-bottom: 64px;
+            font-size: 18px;
+        }
+    }
+
+    .about-company {
+    
+        .content {
+            margin-bottom: 40px;
+        }
+
+        .img-wrapper {
+            text-align: center;
+        }
+    }
+
+}
+
+@media (max-width: 1200px) {
+    
+    .first-screen {
+        
+        .img-wrapper {
+            display: none;
+        }
+    }
 }

@@ -1,0 +1,66 @@
+@media (min-width: 768px){
+    .how-work-body .row .col-12:not(:last-child){
+        margin-bottom: 0;
+    }
+    .overview-img{
+        margin-right: -70px;
+    }
+    .overview-text {
+        margin-bottom: 0;
+    }
+    .recent-news-body .row:last-child .col-12:not(:last-child){
+        margin-bottom: 0;
+    }
+    .achievement-body .row .col-12:not(:last-child){
+        margin-bottom: 40px;
+    }
+}
+@media (min-width: 992px){
+    .top-menu{
+        display: flex;
+    }
+    .burger{
+        display: none;
+    }
+    .first-screen-img{
+        display: flex;
+    }
+    
+    .how-work-body .row .col-12:not(:last-child){
+        margin-bottom: 0;
+    }
+    .user-ability-body .row .col-12:first-child{
+        margin-bottom: 0;
+    }
+    .footer-body .row .col-12{
+        margin-bottom: 0;
+    }
+}
+@media (min-width: 1200px){
+    .overview{
+        background: linear-gradient(90deg, rgba(249,248,248,1) 80%, rgba(249,248,248,0) 80%);
+    }
+    .first-screen, .how-work, .overview, .user-ability, .achievement, .recent-news{
+        margin-bottom: 180px;
+    }
+    .first-screen{
+        min-height: 900px;
+    }
+}
+@media (min-width: 1400px){
+    
+    .section-margin-left{
+        margin-left: 120px;
+    }
+    .section-margin-right{
+        margin-right: 120px;
+    }
+    .achievement-body{
+        margin-left:  60px;
+        margin-right: -60px;
+    }
+    .first-screen-body{
+        margin-left: -60px;
+        margin-right: 60px;
+    }
+}

@@ -1,0 +1,29 @@
+@mixin absolute{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+@mixin padding ($padding...){
+    padding: $padding;
+}
+
+//==============================================
+//                  underline
+//==============================================
+
+@mixin big-underline {
+	border-bottom: 3px solid #808080;
+	padding-bottom: 24px;
+	max-width: 372px;
+}
+@mixin small-underline {
+	border-bottom: 2px solid #e6e6e6;
+	padding-top: 18px;
+	padding-bottom: 12px;
+}
+@mixin primary-underline {
+	border-bottom: 1px solid #D9D9D9;
+}

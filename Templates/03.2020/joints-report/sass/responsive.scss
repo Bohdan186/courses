@@ -1,0 +1,39 @@
+// ------------------------------------------
+// MAX WIDTH 992px ( ... < LG )
+// ------------------------------------------
+
+@media (max-width: 992px) {
+    
+    .banner,
+    .card {
+        margin-bottom: 30px;
+    }
+
+    .highlights {
+        margin-bottom: 20px;
+    }
+}
+
+
+// ------------------------------------------
+// MAX WIDTH 1200px ( ... < XL )
+// ------------------------------------------
+
+@media (max-width: 1200px) {
+
+    .burger {
+        display: flex;
+    }
+
+    .header-main {
+
+        form {
+            display: none;
+        }
+    }
+
+    .top-bar,
+    .navigation-bg {
+        display: none;
+    }
+}

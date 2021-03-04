@@ -1,0 +1,482 @@
+@import url("reset.css");
+@import url("fonts.css");
+@import url("grid.css");
+
+/* General setting */
+body{ 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #424242;
+    width: 100%;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "helvetica-neue";
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15px;
+}
+h1{
+    font-size: 48px;
+}
+h2{
+    font-size: 36px;
+}
+.subtitle::after{
+    content: '';
+    width: 50px;
+    height: 5px;
+    background-color: #424242;
+    position: absolute;
+    bottom: -15px;
+    left: calc(50% - 25px);
+}
+
+.color-white{
+    color: #fff;
+}
+.color-white::after {
+    background: #fff;
+}
+h3{
+    font-size: 29px;
+}
+h4{
+    font-size: 26px;
+}
+h5{
+    font-size: 22px;
+}
+h6{
+    font-size: 18px;
+}
+.subtitle{
+    font-family: "helvetica-neue";
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 70px;
+}
+p{
+    margin-bottom: 20px;
+}
+.fs-16{
+    font-size: 16px;
+}
+.button{
+    text-decoration: none;
+    color: #fff;
+    font-family: "helvetica-neue";
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 5px;
+    display: flex;
+}
+.primary_line-button{
+    padding-left: 22px;
+    padding-top: 12px;
+    padding-right: 22px;
+    padding-bottom: 12px;
+    background: #dd2a24;
+}
+.first_screen-content-button{
+    padding-left: 40px;
+    padding-top: 25px;
+    padding-right: 40px;
+    padding-bottom: 25px;
+    background: #f8cd53;
+    text-transform: uppercase;
+}
+.container{
+    max-width: 1024px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+/* Content */
+
+
+/* top-bar */
+.wrapper-bg-grey{
+    background-color: #f0f2f4;
+    display: flex;
+}
+.wrapper-bg-red{
+    background-color: #de2b24;
+    display: flex;
+}
+.wrapper-bg-blue{
+    background-color: #1287bf;
+    display: flex;
+}
+.top-bar{
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 30px;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.top-bar p{
+    margin-bottom: 0;
+}
+.top-bar-text{
+    font-family: "helvetica";
+    font-weight: 400;
+}
+.facebook{
+    color: #fff;
+    background: #1287bf;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+
+
+/* Header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+.burger{
+    display: none;
+    cursor: pointer;
+}
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px;
+}
+.menu {
+    flex-grow: 1;
+    justify-content: flex-end;
+    display: flex;
+}
+.menu-list{
+    display: flex;
+
+}
+.menu-links{
+    font-family: "helvetica-neue";
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+    color: #424242;
+    margin: 20px;
+}
+
+
+/* first-screen */
+.first-screen{
+    background: url(../img/first_screen-bg.png) center / cover no-repeat;
+    margin-bottom: 100px;
+}
+.first-screen-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* about-us */
+.about-us {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+.about-us-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    row-gap: 15px;
+}
+.about-us-card-img {
+    margin-bottom: 15px;
+}
+
+
+/* our-approch */
+.our-approch {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.step-wrapper{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+.step{
+    background-color: #fff;
+}
+.step-text {
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    row-gap: 15px;
+}
+.text-right{
+    text-align: right;
+}
+
+.step-img1 {
+    background: url('../img/approch1.jpg') center / cover no-repeat;
+    min-height: 255px;
+}
+.step-img2 {
+    background: url('../img/approch2.jpg') center / cover no-repeat;
+    min-height: 267px;
+}
+.step-img3 {
+    background: url('../img/approch3.jpg') center / cover no-repeat;
+    min-height: 267px;
+}
+.step-img4 {
+    background: url('../img/approch4.jpg') center / cover no-repeat;
+    min-height: 268px;
+}
+
+/* our-work */
+.our-work{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.our-work h4{
+    padding-bottom: 5px;
+}
+.our-work-items{
+    color: #fff;
+    text-align: center;
+    background-color: #f35e59;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.our-work .col-3{
+    min-height: 253px;
+}
+
+.img1{
+    background: url(../img/Layer-17.png) center / cover no-repeat;
+}
+
+.img2{
+    background: url(../img/Layer-19.png) center / cover no-repeat;
+}
+
+.img3{
+    background: url(../img/Layer-20.png) center / cover no-repeat;
+}
+
+.img4{
+    background: url(../img/Layer-22.png) center / cover no-repeat;
+}
+
+
+/* form */
+.form{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form h2{
+    margin-bottom: 15px;
+}
+.form .color-white::after{
+    content: none;
+}
+.mg-bt{
+    margin-bottom: 15px;
+}
+.form img{
+    margin-bottom: 55px;
+}
+.form-text {
+    font-family: "helvetica";
+    font-weight: 400;
+    font-size: 15px;
+    color: #828282;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 50px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.form-window{
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 5px;
+    position: relative;
+}
+.form-window::before {
+    content: '';
+    position: absolute;
+    top: -33px;
+    left: calc(50% - 33px );
+    border-bottom: 33px solid #fff;
+    border-right: 33px solid transparent;
+    border-left: 33px solid transparent;
+}
+
+.form-window::after {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #fff;
+    font-weight: 700;
+    font-size: 24px;
+    content: 'X';
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background: #dd2a24;
+}
+.form-form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 70px;
+}
+
+.form-input {
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #868686;
+    border-radius: 5px;
+}
+
+.form-button{
+    padding-left: 33px;
+    padding-top: 15px;
+    padding-right: 33px;
+    padding-bottom: 15px;
+    background: #dd2a24;
+    text-transform: uppercase;
+    margin-top: 30px;
+    border: none; 
+    justify-content: center;
+    align-self: center;
+}
+
+/*  */
+
+
+
+
+
+
+/* MEDIA */
+
+@media (max-width: 890px){
+    .menu{
+        display: none;
+    }
+    
+    .header a.button {
+        display: none;
+    }
+    
+    .burger{
+        display: block;
+    }
+
+    .our-approch .row .col-4, .our-approch .row .col-8{
+        width: 50%;
+    }
+
+    .our-work .row .col-3{
+        width: 50%;
+    }
+
+    .form-text {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .form-form {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+@media (max-width: 690px){
+    .form-text {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .form-form {
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+}
+
+@media (max-width: 570px){
+    
+    .about-us .row .col-4{
+        width: 100%;
+    }
+    .about-us-card{
+        margin-bottom: 30px;
+        row-gap: 0;
+    }
+    .form-text {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .form-form {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+
+@media (max-width: 490px){
+    
+    .our-approch .row .col-4, .our-approch .row .col-8{
+        width: 100%;
+    }
+    
+    .step-text {
+        margin: 30px;
+    }
+
+    
+    .our-work .row .col-3 {
+        width: 100%;
+    }
+
+    .form .row .col-8 {
+        width: 83.333333333333333%;
+    }
+
+    .form-text {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .form-form {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

@@ -1,0 +1,391 @@
+@import url("reset.css");
+@import url("grid.css");
+@import url("media.css");
+
+/* GENERAL SETTING */
+
+body{ 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #3b434c;
+    width: 100%;
+}
+h1, h2, h3, h4, h5, h6{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.first-screen span {
+    color: #f7600e;
+}
+h1{
+    font-size: 70px;
+    font-weight: 800;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+.h1-subtitle{
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 40px;
+}
+h2{
+    font-size: 35px;
+    font-weight: 600;
+}
+h3, .h2-subtitle{
+    font-size: 25px;
+    font-weight: 600;
+    
+    text-align: center;
+}
+h4{
+    font-size: 16px;
+    font-weight: 600;
+}
+p{
+    margin-bottom: 20px;
+    line-height: 26px;
+}
+.button{
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 20px 70px;
+    border: 3px solid #3b434c;
+    border-radius: 10px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #3b434c;
+}
+.button:hover{
+    background-color: #f7600e;
+}
+.down::after{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+    content: 'v';
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 15px);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+
+.container{
+    max-width: 1170px;
+}
+
+/*  content  */
+.first-screen {
+    background: url(../img/first-screen.png) center / cover no-repeat;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.first-screen::after, .newsletter-bg::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(59, 67, 76, 0.8);
+}
+.first-screen *{
+    z-index: 1;
+    color: #fff;
+}
+.first-screen .row{
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.header {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title-menu {
+    font-size: 16px;
+    margin: 0 20px 0 0;
+}
+.burger{
+    cursor: pointer;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    margin-bottom: 7px;
+    background-color: #fff;
+}
+
+.first-screen-content {
+    min-height: 80vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* our-services */
+
+.our-services{
+    background-color: #fff;
+    
+    margin-bottom: 100px;
+}
+.our-services-cards {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.img-wrap{
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid #3b434c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+
+/* newsletter  */
+
+.newsletter-bg {
+    background: url("../img/tablet-791051.png") center / cover no-repeat;
+    min-height: 30vh;
+    display: flex;
+    position: relative;
+    margin-bottom: 100px;
+}
+.newsletter-bg *{
+    z-index: 1;
+}
+.newsletter{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+form.newsletter-form {
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vw;
+}
+
+input.newsletter-input {
+    border-radius: 10px;
+    /* min-width: 100%; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    margin-right: 30px;
+}
+
+input[type="button"] {
+    border: none;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background: #f7600e;
+    font-weight: 600;
+    color: #fff;
+}
+/* our-works */
+.our-works .row {
+    justify-content: center;
+}
+.title{
+    margin-bottom: 100px;
+}
+.img {
+    min-height: 360px;
+    margin-bottom: 30px;
+}
+.img1{
+    background: url('../img/imac-606765_1920.png') center / cover no-repeat;
+}
+.img2{
+    background: url('../img/office-605503_1920.png') center / cover no-repeat;
+}
+.img3{
+    background: url('../img/business-925900_1920.png') center / cover no-repeat;
+}
+.img4{
+    background: url('../img/ipad-606766_1920.png') center / cover no-repeat;
+}
+.img5{
+    background: url('../img/technology-792180_1920.png') center / cover no-repeat;
+}
+.img6{
+    background: url('../img/macbook-624707_1920.png') center / cover no-repeat;
+}
+
+.mb70{
+    margin-bottom: 70px;
+}
+
+.mb100{
+    margin-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 720px){
+    .down::after{
+        content: none;
+    }
+    .button {
+        padding: 20px 30px;
+    }
+    .h1-subtitle {
+        font-size: 20px;
+        line-height: 35px;
+    }
+    h1 {
+        margin-bottom: 30px;
+    }
+
+    .our-works .row .col-4{
+        width: 50%;
+    }
+
+    .our-works .row .col-3{
+        width: 50%;
+    }
+    .our-works .row .col-6{
+        width: 83.333333333333333%;
+    }
+}
+
+@media (max-width: 650px){
+    .first-screen .row .col-3{
+        width: 66.666666
+        .666666667%;
+    } 
+    .our-services .row .col-3{
+        width: 50%;
+    }
+}
+@media (max-width: 480px){
+    .first-screen .row .col-3{
+        width: 100%
+    } 
+    .first-screen .row .col-8{
+        width: 100%
+    } 
+    
+    .our-services .row .col-3{
+        width: 100%;
+    }
+
+    .newsletter .row .col-3, .newsletter .row .col-5{
+        width: 91.666666666666667%;
+    }
+    input.newsletter-input{
+        margin-right: 0;
+        text-align: center;
+    }
+
+    
+    .our-works .row .col-4{
+        width: 100%;
+    }
+    .our-works .row .col-3{
+        width: 100%;
+    }
+        .our-works .row .col-6{
+        width: 100%;
+    }
+}

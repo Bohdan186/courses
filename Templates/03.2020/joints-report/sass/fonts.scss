@@ -1,0 +1,108 @@
+// ------------------------------------------
+// Alegreya (400)
+// ------------------------------------------
+
+@font-face {
+    font-family: 'Alegreya';
+    src: local('Alegreya Regular'), local('Alegreya-Regular'), url('../fonts/') format('woff2'), url('../fonts/alegreya-sans-v13-latin-regular.woff') format('woff'), url('../fonts/alegreya-sans-v13-latin-regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+// ------------------------------------------
+// Metropolis   (400, 500, 600, 700)
+// ------------------------------------------
+
+@font-face {
+    font-family: 'Metropolis';
+    src: local('Metropolis'), local('Metropolis-Regular'), url('../fonts/Metropolis.woff2') format('woff2'), url('../fonts/Metropolis.woff') format('woff'), url('../fonts/Metropolis.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: local('Metropolis Medium'), local('Metropolis-Medium'), url('../fonts/Metropolismedium.woff2') format('woff2'), url('../fonts/Metropolismedium.woff') format('woff'), url('../fonts/Metropolismedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: local('Metropolis Semi Bold'), local('Metropolis-SemiBold'), url('../fonts/Metropolissemibold.woff2') format('woff2'), url('../fonts/Metropolissemibold.woff') format('woff'), url('../fonts/Metropolissemibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: local('Metropolis Bold'), local('Metropolis-Bold'), url('../fonts/Metropolisbold.woff2') format('woff2'), url('../fonts/Metropolisbold.woff') format('woff'), url('../fonts/Metropolisbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+// ------------------------------------------
+// MyriadPro (400)
+// ------------------------------------------
+
+@font-face {
+    font-family: 'MyriadPro';
+    src: local('MyriadPro Regular'), local('MyriadPro-Regular'), url('../fonts/MyriadPro-Regular.woff2') format('woff2'), url('../fonts/MyriadPro-Regular.woff') format('woff'), url('../fonts/MyriadPro-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+// ------------------------------------------
+// Poppins (400, 500, 600)
+// ------------------------------------------
+
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins Regular'), local('Poppins-Regular'), url('../fonts/Poppins-Regular.woff') format('woff'), url('../fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins Medium'), local('Poppins-Medium'), url('../fonts/Poppins-Medium.woff') format('woff'), url('../fonts/Poppins-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins Semi Bold'), local('Poppins-SemiBold'), url('../fonts/Poppins-SemiBold.woff') format('woff'), url('../fonts/Poppins-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+
+// ------------------------------------------
+// Roboto (300, 400, 500)
+// ------------------------------------------
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Light'), local('Roboto-Light'), url('../fonts/Roboto-Light.woff') format('woff'), url('../fonts/Roboto-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Regular'), local('Roboto-Regular'), url('../fonts/Roboto-Regular.woff') format('woff'), url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Medium'), local('Roboto-Medium'), url('../fonts/Roboto-Medium.woff') format('woff'), url('../fonts/Roboto-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}

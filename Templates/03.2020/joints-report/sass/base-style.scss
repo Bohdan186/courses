@@ -1,0 +1,44 @@
+// ------------------------------------------
+// VARIABLES
+// ------------------------------------------
+
+$primColor: #ED1C24;
+$primHoverColor: #ff161e;
+$transition: all 0.4s ease; 
+
+
+// ------------------------------------------
+// BODY
+// ------------------------------------------
+
+body {
+	font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+	font-size: 20px;
+	line-height: 1.4;
+	color: #8c8c8c;
+}
+
+
+// ------------------------------------------
+// HEADERS
+// ------------------------------------------
+	
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Metropolis', sans-serif;
+	font-weight: 600;
+	color: #000;
+	margin-bottom: 30px;
+}
+
+// ------------------------------------------
+// PARAGRAPHS
+// ------------------------------------------
+
+p {
+	margin-bottom: 20px;
+}
+
+span {
+	color: $primColor;
+}

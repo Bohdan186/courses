@@ -245,3 +245,33 @@
     }
 }
 
+// ------------------------------------------
+// Story
+// ------------------------------------------
+.story {
+    background: url("../img/story-bg.png")center /cover no-repeat;
+    padding-top: 75px;
+    padding-bottom: 77px;
+
+    .content {
+        text-align: center;
+    }
+
+    .above-title {
+        font-size: 48px;
+        margin-bottom: 6px;
+    }
+
+    h2 {
+        margin-bottom: 23px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+        max-width: 940px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    
+    }
+}

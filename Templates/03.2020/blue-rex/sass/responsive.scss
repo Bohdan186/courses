@@ -46,9 +46,7 @@
 
 @media (max-width: 992px) {
 
-    .header-menu {
-        display: none;
-    }
+    
 
     .first-screen {
 
@@ -81,10 +79,35 @@
 
 @media (max-width: 1200px) {
     
+    .header-menu {
+        display: none;
+    }
+
     .first-screen {
         
         .img-wrapper {
             display: none;
+        }
+    }
+
+    .categories {
+
+        li {
+
+            &.active,
+            &:hover {
+
+                a {
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+
+    .about-company {
+        
+        .img-wrapper {
+            margin: 0;
         }
     }
 }

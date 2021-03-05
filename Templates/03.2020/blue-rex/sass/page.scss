@@ -157,8 +157,7 @@
 .categories {
     display: flex;
     margin-bottom: 15px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 15px;
     overflow-y: hidden;
 
     li {
@@ -365,3 +364,75 @@
     }
 
 }
+
+// ------------------------------------------
+// Our Work
+// ------------------------------------------
+
+.our-work {
+    background-color: #F1F1F1;
+    padding-top: 58px;
+    padding-bottom: 115px;
+    text-align: center;
+
+    .subtitle {
+        font-size: 20px;
+        color: #333333;
+        max-width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 36px;
+        
+    }
+    
+    .img-wrapper {
+        overflow: hidden;
+        margin-bottom: 30px;
+
+        
+       
+        .img-inner {
+          transition: $transition;
+          position: relative;
+
+            a {
+              @include absolute;
+            }
+            
+            img {
+                width: 100%;
+            }
+
+        }
+        
+        &:hover {
+            .img-inner {
+            transform: scale(1.2) ;
+          }
+        }
+    }
+
+    .categories {
+        margin-bottom: 55px;
+        justify-content: center;
+
+        li {
+
+            a {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .row {
+        
+        > div {
+            
+            &:last-child {
+                margin-bottom: 88px;
+            }
+        }
+    }
+      
+}
+  

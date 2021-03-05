@@ -275,3 +275,93 @@
     
     }
 }
+
+// ------------------------------------------
+// Our Services
+// ------------------------------------------
+
+.our-services {
+    padding-top: 88px;
+    padding-bottom: 89px;
+
+    .above-title {
+        font-size: 33px;
+        margin-bottom: 0;
+    }
+
+    h2 {
+        margin-bottom: 26px;
+        line-height: 1.1;
+    }
+
+    .subtitle {
+        font-size: 17px;
+        margin-bottom: 5px;
+    }
+
+    .services {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        transition: $transition;
+
+        .img-wrapper {
+            margin-bottom: 15px;
+        }
+
+        h4 {
+            margin-bottom: 15px;
+        }
+
+        a {
+            
+            &:hover {
+                color: $primColor2;
+            }
+        }
+
+        p {
+            margin-bottom: 40px;
+        }
+    }
+
+    .video {
+        position: relative;
+        cursor: pointer;
+        margin-left: 30px;
+        
+        &:hover {
+
+            .play-btn {
+                
+                background-color: #ff3a7c;
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+
+    }
+
+    .play-btn {
+        position: absolute;
+        top: calc(50% - (125px / 2));
+        left: calc(50% - (125px / 2));
+        width: 125px;
+        height: 125px;
+        border-radius: 50%;
+        background-color: $primColor2;
+        transition: $transition;
+        
+        
+        i {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-33%, -50%);
+            font-size: 60px;
+            color: #fff;
+        }
+    }
+
+}

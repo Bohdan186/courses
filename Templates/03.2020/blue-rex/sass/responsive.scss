@@ -31,59 +31,6 @@
 }
 
 
-// ------------------------------------------
-// Max Width 576px ( ... < 576px)
-// ------------------------------------------
-
-@media (max-width: 576px) {
-
-    .first-screen {
-        text-align: center;
-    }
-
-    .button-wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-
-        .button {
-
-            &:first-child {
-                margin: 0;
-                margin-bottom: 28px;
-            }
-        }
-    }
-
-    .our-work {
-        
-        .row {
-
-            > div {
-
-                &:last-child {
-                    margin-bottom: 0;
-                }
-            }
-        }
-    }
-
-    .header {
-        
-        .content {
-            padding: 0;
-        }
-    }
-
-    .first-screen {
-
-        .content {
-            padding: 0;
-        }
-    }
-}
-
 
 // ------------------------------------------
 // Max Width 992px ( ... < 992px)
@@ -160,6 +107,71 @@
         
         .img-wrapper {
             margin: 0;
+        }
+    }
+}
+
+
+// ------------------------------------------
+// Max Width 576px ( ... < 576px)
+// ------------------------------------------
+
+@media (max-width: 576px) {
+
+    .first-screen {
+        text-align: center;
+        min-height: 700px;
+
+        .above-title {
+            font-size: 28px;
+        }
+    
+        h1 {
+            font-size: 36px;
+        }
+    
+        .subtitle {
+            margin-bottom: 64px;
+            font-size: 14px;
+        }
+
+        .content {
+            padding: 0;
+        }
+    }
+
+    .button-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .button {
+
+            &:first-child {
+                margin: 0;
+                margin-bottom: 28px;
+            }
+        }
+    }
+
+    .our-work {
+        
+        .row {
+
+            > div {
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .header {
+        
+        .content {
+            padding: 0;
         }
     }
 }

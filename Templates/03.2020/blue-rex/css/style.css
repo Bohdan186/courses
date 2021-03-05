@@ -4791,7 +4791,7 @@ select {
 }
 
 .first-screen {
-  padding-top: 100px;
+  padding-top: 156px;
   background: url(../img/Header-bg.png) center/cover no-repeat;
   min-height: 945px;
   display: flex;
@@ -5055,6 +5055,36 @@ select {
   margin-bottom: 88px;
 }
 
+.our-partners {
+  background-color: #4b2d7f;
+  padding-top: 82px;
+  padding-bottom: 50px;
+}
+.our-partners .client-logo {
+  display: flex;
+  justify-content: center;
+}
+.our-partners .client-logo img {
+  opacity: 1;
+  transition: all 0.4s ease;
+}
+.our-partners .client-logo:hover img {
+  opacity: 0.5;
+}
+.our-partners .client-logo a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.our-partners .img-wrapper {
+  padding: 30px;
+}
+.our-partners .row:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 @media (max-width: 768px) {
   .button-wrapper {
     margin-left: 0;
@@ -5067,34 +5097,6 @@ select {
 
   .first-screen .content {
     padding: 15;
-  }
-}
-@media (max-width: 576px) {
-  .first-screen {
-    text-align: center;
-  }
-
-  .button-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .button-wrapper .button:first-child {
-    margin: 0;
-    margin-bottom: 28px;
-  }
-
-  .our-work .row > div:last-child {
-    margin-bottom: 0;
-  }
-
-  .header .content {
-    padding: 0;
-  }
-
-  .first-screen .content {
-    padding: 0;
   }
 }
 @media (max-width: 992px) {
@@ -5135,6 +5137,44 @@ select {
 
   .about-company .img-wrapper {
     margin: 0;
+  }
+}
+@media (max-width: 576px) {
+  .first-screen {
+    text-align: center;
+    min-height: 700px;
+  }
+  .first-screen .above-title {
+    font-size: 28px;
+  }
+  .first-screen h1 {
+    font-size: 36px;
+  }
+  .first-screen .subtitle {
+    margin-bottom: 64px;
+    font-size: 14px;
+  }
+  .first-screen .content {
+    padding: 0;
+  }
+
+  .button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .button-wrapper .button:first-child {
+    margin: 0;
+    margin-bottom: 28px;
+  }
+
+  .our-work .row > div:last-child {
+    margin-bottom: 0;
+  }
+
+  .header .content {
+    padding: 0;
   }
 }
 

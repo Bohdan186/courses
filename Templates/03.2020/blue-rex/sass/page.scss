@@ -71,7 +71,7 @@
 // ------------------------------------------
 
 .first-screen {
-    padding-top: 100px;
+    padding-top: 156px;
     background: url(../img/Header-bg.png) center/cover no-repeat;
     min-height: 945px;
     display: flex;
@@ -435,4 +435,45 @@
     }
       
 }
-  
+
+// ------------------------------------------
+// Our Partners
+// ------------------------------------------
+
+.our-partners {
+    background-color: $primColor1;
+    padding-top: 82px;
+    padding-bottom: 50px;
+
+    .client-logo {
+        display: flex;
+        justify-content: center;
+
+        img {
+            opacity: 1;
+            transition: $transition;
+        }
+
+        &:hover {
+
+            img {
+                opacity: .5;
+            }
+        }
+
+        a {
+            @include absolute;
+        }
+    }
+
+    .img-wrapper {
+        padding: 30px;
+    }
+
+    .row {
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+}

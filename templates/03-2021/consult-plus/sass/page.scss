@@ -59,17 +59,11 @@
 
 	span {
 		color: #fff;
+		margin-right: 5px;
 	}
 
 	&:not(:last-child){
-		&::after {
-			content: '';
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			border-right: 1px solid #505253;
-		}
+		border-right: 1px solid #505253;
 	}
 
 	&:last-child {
@@ -86,6 +80,10 @@
 .primary-menu {
 	display: flex;
 	margin-right: -18px;
+
+	.active {
+		color: #FFAC56;
+	}
 	
 	li {
 		font-size: 14px;
@@ -125,70 +123,78 @@
 	background: url("../img/slider1.jpg") center /cover no-repeat;
 
 
-	&::before {
-		content: '';
+	.prew, .next {
 		position: absolute;
-		left: 0;
 		top: calc(50% - 53px);
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		width: 46px;
 		height: 106px;
-		background: #262829 url("../img/arrow-left.png")center no-repeat;
+		background-color: #262829;
 		cursor: pointer;
-		z-index: 3;
+		z-index: 1;
+		font-size: 30px;
+		color: #fff;
+		transition: $transition;
+		
+		&:hover {
+			background-color: #404446;
+		}
+
 	}
 
-	&::after {
-		content: '';
-		position: absolute;
+	.prew {
+		left: 0;
+	}
+
+	.next {
 		right: 0;
-		top: calc(50% - 53px);
-		width: 46px;
-		height: 106px;
-		background: #262829 url("../img/arrow-right.png")center no-repeat;
-		cursor: pointer;
-		z-index: 3;
 	}
 }
 
 .slider-inner {
-	max-width: 50%;
-    min-width: 300px;
-}
-
-.slider-title-bg {
-	background-color: #FFAC56;
+	max-width: 458px;
 }
 
 .slider-title {
 	display: inline-flex;
 	flex-direction: column;
-	padding: 35px 57px 39px 35px;
+	padding: 30px 65px 23px 40px;
+	min-width: 100%;
 	margin-bottom: 0;
 	font-family: "Lato", sans-serif;
 	font-weight: 300;
+	background-color: #FFAC56;
+    letter-spacing: -0.6px;
+}
+
+.header-box-wrapper {
+	&:nth-child(even){
+		border-right: 1px solid #00A6D3;
+	}
+	border-bottom: 1px solid #00A6D3;
 }
 
 .header-box {
-	position: relative;
-	background-color: #03B6E7;
-	border-bottom: 1px solid #00A6D3;
-	border-left: 1px solid #00A6D3;
-	transition: $transition;
-	padding: 33px 28px 33px 40px;
+    position: relative;
+    min-height: 100%;
+    padding: 28px 23px 42px 40px;
+    background-color: #03B6E7;
+    transition: all 0.4s ease;
 
 	>a {
 		@include absolute;
 	}
 
-	&:last-child {
-		padding: 0;
-	}
+	
 
-	&:last-child{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
+	// &:last-child{
+	// 	display: flex;
+	// 	justify-content: center;
+	// 	align-items: center;
+	// 	padding: 0;
+	// }
 
 	&:hover {
 		background-color: #00A6D3;
@@ -213,7 +219,7 @@
 	}
 
 	.img-wrapper{
-		margin-bottom: 15px;
+		margin-bottom: 9px;
 	}
 
 	h6 {

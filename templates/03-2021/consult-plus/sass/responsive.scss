@@ -12,10 +12,26 @@
 	}
 }
 
+
+@media (max-width: 993px){
+	.slider {
+
+		.prew, .next {
+			display: none;
+		}
+	}
+	.slider-inner {
+		max-width: 100%;
+	}
+}
+
 @media (max-width: 768px){
-	.slider-title,
-	.header-box {
-		padding: 15px;
+	// .slider-title,
+	// .header-box {
+	// 	padding: 15px;
+	// }
+	.slider-inner {
+		max-width: 100%;
 	}
 }
 

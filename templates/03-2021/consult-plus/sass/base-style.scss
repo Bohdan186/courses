@@ -38,6 +38,8 @@ h1,h2,h3,h4,h5,h6 {
 	text-transform: uppercase;
 
 	.top-subtitle {
+		display: flex;
+		flex-direction: column;
 		font-size: 14px;
 		font-weight: 400;
 		color: #898e8f;

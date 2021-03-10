@@ -39,12 +39,17 @@
 	font-size: 13px;
 	padding: 17px 27px;
 	background-color: #16D428;
+	z-index: 1;
 
 	&:hover{
 		background-color: #09DF1E;
 	}
 	
-	
+	&.button-extra-large {
+		min-width: 293px;
+		text-align: center;
+	}
+
 	&.button-large {
 		padding: 22px 35px;
 	}

@@ -206,9 +206,9 @@
 	background-color: #03B6E7;
 	transition: all .4s ease;
 
-	> a {
+	.absolute {
 		@include absolute;
-	}
+	}	
 
 	&:hover {
 		background-color: #00A6D3;
@@ -343,9 +343,6 @@
 	h3 {
 		margin-bottom: 7px;
 	}
-	.top-subtitle {
-		margin-bottom: -6px;
-	}
 
 	.title {
 		margin-bottom: 16px;
@@ -423,8 +420,21 @@
 }
 
 .clients {
+	position: relative;
 	display: flex;
 	align-items: center;
+	opacity: .6;
+	transition: $transition;
+	cursor: pointer;
+
+	a {
+		@include absolute;
+	}
+	
+	&:hover,
+	&.active {
+		opacity: 1;
+	}
 
 	.img-wrapper {
 		margin-right: 28px;
@@ -446,7 +456,8 @@
 	cursor: pointer;
 
 	i {
-		
+		transition: $transition;
+
 		&:not(:last-child) {
 			margin-right: 6px;
 		}
@@ -469,12 +480,13 @@
 
 
 .col-content {
+	display: flex;
+	justify-content: flex-end;
 
     .inner {
 		max-width: 556px;
-		margin-left: 90px;
-		padding-top: 92px;
-		padding-bottom: 27px;
+		padding-top: 30px;
+		padding-bottom: 30px;
     }
 }
 
@@ -491,8 +503,7 @@
 	.tabs {
 		display: flex;
 		align-items: center;
-
-
+		overflow-y: hidden;
 
 		li {
 			flex-shrink: 0;
@@ -500,11 +511,16 @@
 			&:not(:last-child) {
 				margin-right: 22px;
 			}
+
+			&:hover,
+			&.active {
+				
+				a {
+					border-color: #FFAC56;
+				}
+			}
 		}
 	}
-}
-
-.articles {
 }
 
 .article-preview {
@@ -523,11 +539,7 @@
 	.title {
 		margin-bottom: 17px;
 	}
-
-	.article-preview-title {
-
-	}
-
+	
 	.top-subtitle {
 		font-family: 'Domine', serif;
 		text-transform: initial;

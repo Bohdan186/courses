@@ -93,13 +93,20 @@
 		}
 	}
 
+	.col-content {
+
+    .inner {
+		max-width: 100%;
+		margin-left: 0;
+		padding-top: 50px;
+		padding-bottom: 50px;
+    }
+}
+
 }
 
 @media (max-width: 768px){
-	// .slider-title,
-	// .header-box {
-	// 	padding: 15px;
-	// }
+
 	.slider-inner {
 		max-width: 100%;
 	}
@@ -108,11 +115,46 @@
 		margin-bottom: 50px;
 	}
 
-
-
-
 	.header-top {
 		display: none;
+	}
+
+	.projects {
+		margin-bottom: 50px;
+	}
+
+	.testimonials {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	.testimonials {
+
+		.title {
+
+			&:first-child {
+				margin-bottom: 35px;
+			}
+		}
+
+		.row {
+
+			&:first-child {
+				margin-bottom: 35px;
+			}
+		}
+
+		.quotes-helper {
+			margin-bottom: 15px;
+		}
+
+		.quote {
+			margin-bottom: 0;
+
+			p {
+				margin-bottom: 15px;
+			}
+		}
 	}
 }
 

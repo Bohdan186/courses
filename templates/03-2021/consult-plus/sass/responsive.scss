@@ -95,14 +95,25 @@
 
 	.col-content {
 
-    .inner {
-		max-width: 100%;
-		margin-left: 0;
-		padding-top: 50px;
-		padding-bottom: 50px;
-    }
-}
+		.inner {
+			max-width: 100%;
+			margin-left: 0;
+			padding-top: 50px;
+			padding-bottom: 50px;
+		}
+	}
 
+	.title-and-tabs .title {
+		margin-right: 0;
+	}
+
+	.article-preview:not(:last-child) {
+		margin-bottom: 40px;
+	}
+
+	.col-content {
+		justify-content: stretch;
+	}
 }
 
 @media (max-width: 768px){

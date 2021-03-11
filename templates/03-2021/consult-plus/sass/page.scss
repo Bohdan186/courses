@@ -337,7 +337,7 @@
 	margin-top: -94px;
 	margin-bottom: 88px;
 	padding-top: 94px;
-    padding-bottom: 98px;
+    padding-bottom: 82px;
 	background-color: #E7EFF1;
 
 	h3 {
@@ -473,6 +473,11 @@
 // OUR BLOG
 // ------------------------------------------
 
+.our-blog {
+	margin-bottom: 94px;
+	background-color: #E7EFF1;
+}
+
 .col-bg {
 	min-height: 747px;
 	background: url("../img/blog-foto.png") left / cover no-repeat;
@@ -539,7 +544,7 @@
 	.title {
 		margin-bottom: 17px;
 	}
-	
+
 	.top-subtitle {
 		font-family: 'Domine', serif;
 		text-transform: initial;
@@ -552,4 +557,51 @@
 		}
 
 	}
+}
+
+// ------------------------------------------
+// CONTACT US
+// ------------------------------------------
+
+.contact-us {
+	margin-bottom: 94px;
+
+	.title {
+		margin-bottom: 15px;
+	}
+}
+
+// ------------------------------------------
+// FOOTER
+// ------------------------------------------
+
+.footer {
+	background-color: #262829;
+    padding-top: 89px;
+    padding-bottom: 36px;
+
+	.title {
+		margin-bottom: 22px;
+	}
+
+	p {
+		&:not(:last-child) {
+			margin-bottom: 38px;
+			line-height: 1.6;
+		}
+	}
+}
+
+.footer-inner {
+    padding-bottom: 83px;
+}
+
+.news-letter-wrapper {
+	max-width: 515px;
+}
+
+.copyright-inner {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    padding-top: 18px;
+    padding-bottom: 18px;
 }

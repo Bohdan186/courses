@@ -347,6 +347,14 @@
 	.title {
 		margin-bottom: 16px;
 	}
+
+	.info-box {
+		
+		.img-wrapper {
+			min-width: 73px;
+			min-height: 73px;
+		}
+	}
 }
 
 
@@ -604,4 +612,53 @@
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     padding-top: 18px;
     padding-bottom: 18px;
+}
+
+
+// ------------------------------------------------------------------------------------------------
+// 404
+// ------------------------------------------------------------------------------------------------
+
+.oops-inner {
+	border-top: 1px solid #E8F0F2;
+	padding-top: 76px;
+	padding-bottom: 95px;
+	text-align: center;
+
+	.img-wrapper {
+		margin-bottom: 45px;
+	}
+}
+
+// ------------------------------------------------------------------------------------------------
+// SERVICE
+// ------------------------------------------------------------------------------------------------
+
+.service-header {
+	display: flex;
+	justify-content: space-between;	
+	align-items: center;
+	flex-wrap: wrap;
+	margin-bottom: 47px;
+
+	// form {
+	// 	flex-wrap: wrap;
+	// }
+
+}
+
+.services {
+	padding-top: 94px;
+	padding-bottom: 94px;
+
+	.row {
+
+		> div {
+			margin-bottom: 72px;
+		}
+	}
+}
+
+.section-footer {
+	text-align: center;
 }

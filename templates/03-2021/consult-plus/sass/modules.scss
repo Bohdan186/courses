@@ -81,8 +81,6 @@
 
 	.img-wrapper {
 		margin-bottom: 16px;
-		min-width: 73px;
-		min-height: 73px;
 	}
 
 	.top-subtitle {
@@ -91,13 +89,15 @@
 		font-size: 20px;
 	}
 
-	h5 {
-		margin-bottom: 19px;
-		letter-spacing: -1.2px;
-	}
-
 	p {
 		line-height: 1.9;
+	}
+
+	a {
+
+		&:hover {
+			color: #16d428;
+		}
 	}
 
 	&.info-box-horizontal {
@@ -118,6 +118,17 @@
 		p {
 			font-size: 18px;
 			line-height: 1.2;
+		}
+	}
+
+	&.info-box-list {
+		.img-wrapper {
+			min-width: 40px;
+			min-height: 40px;
+			margin-bottom: 32px;
+		}
+		.title {
+			margin-bottom: 19px;
 		}
 	}
 }
@@ -217,6 +228,12 @@
 // ------------------------------------------
 // FORM
 // ------------------------------------------
+
+select {
+    height: 40px;
+    min-width: 240px;
+    text-transform: uppercase;
+}
 
 .subscribe {
 	display: flex;

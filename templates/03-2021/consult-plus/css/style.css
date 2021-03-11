@@ -4749,20 +4749,17 @@ select {
 
 .info-box .img-wrapper {
   margin-bottom: 16px;
-  min-width: 73px;
-  min-height: 73px;
 }
 .info-box .top-subtitle {
   margin-bottom: 4px;
   color: #16D428;
   font-size: 20px;
 }
-.info-box h5 {
-  margin-bottom: 19px;
-  letter-spacing: -1.2px;
-}
 .info-box p {
   line-height: 1.9;
+}
+.info-box a:hover {
+  color: #16d428;
 }
 .info-box.info-box-horizontal {
   display: flex;
@@ -4780,6 +4777,14 @@ select {
 .info-box.info-box-horizontal p {
   font-size: 18px;
   line-height: 1.2;
+}
+.info-box.info-box-list .img-wrapper {
+  min-width: 40px;
+  min-height: 40px;
+  margin-bottom: 32px;
+}
+.info-box.info-box-list .title {
+  margin-bottom: 19px;
 }
 
 .banner {
@@ -4858,6 +4863,12 @@ select {
 .banner:hover::before {
   border-bottom-color: #F6A149;
   border-left-color: #F6A149;
+}
+
+select {
+  height: 40px;
+  min-width: 240px;
+  text-transform: uppercase;
 }
 
 .subscribe {
@@ -5160,6 +5171,10 @@ select {
 .our-steps .title {
   margin-bottom: 16px;
 }
+.our-steps .info-box .img-wrapper {
+  min-width: 73px;
+  min-height: 73px;
+}
 
 .projects {
   margin-bottom: 94px;
@@ -5350,6 +5365,36 @@ select {
   padding-bottom: 18px;
 }
 
+.oops-inner {
+  border-top: 1px solid #E8F0F2;
+  padding-top: 76px;
+  padding-bottom: 95px;
+  text-align: center;
+}
+.oops-inner .img-wrapper {
+  margin-bottom: 45px;
+}
+
+.service-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 47px;
+}
+
+.services {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.services .row > div {
+  margin-bottom: 72px;
+}
+
+.section-footer {
+  text-align: center;
+}
+
 @media (max-width: 1200px) {
   .info-box.info-box-horizontal {
     padding: 20px;
@@ -5530,10 +5575,21 @@ select {
   .footer .footer-inner {
     padding-bottom: 10px;
   }
+
+  .services .row > div {
+    margin-bottom: 40px;
+  }
 }
 @media (max-width: 767px) {
   .about-us .content {
     text-align: center;
+  }
+
+  .info-box.info-box-list .img-wrapper {
+    margin-bottom: 20px;
+  }
+  .info-box.info-box-list .title {
+    margin-bottom: 10px;
   }
 
   .our-steps {
@@ -5547,12 +5603,6 @@ select {
   }
   .our-steps .info-box-wrapper:not(:last-child) {
     margin-bottom: 25px;
-  }
-  .our-steps .info-box .img-wrapper-1 {
-    margin-bottom: 15px;
-  }
-  .our-steps .info-box h5 {
-    margin-bottom: 10px;
   }
 
   .badge-section-wrapper {

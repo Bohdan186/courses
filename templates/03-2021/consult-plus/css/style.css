@@ -4762,7 +4762,7 @@ select {
   font-size: 20px;
 }
 .info-box p {
-  line-height: 1.9;
+  line-height: 1.8;
 }
 .info-box a:hover {
   color: #16d428;
@@ -4778,10 +4778,6 @@ select {
 .info-box.info-box-horizontal h5 {
   margin-bottom: 5px;
 }
-.info-box.info-box-horizontal p {
-  font-size: 18px;
-  line-height: 1.2;
-}
 .info-box.info-box-list .img-wrapper {
   min-width: 40px;
   min-height: 40px;
@@ -4793,6 +4789,25 @@ select {
 .info-box.info-box-bordered {
   padding: 27px 35px;
   border: 1px solid #E1EAEC;
+}
+.info-box.info-box-img-circle:hover .img-wrapper {
+  box-shadow: 0 0 65px rgba(210, 222, 225, 0.44);
+}
+.info-box.info-box-img-circle .img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 53px;
+  min-width: 142px;
+  height: 142px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d6e1e3;
+  transition: all 0.4s ease;
+}
+.info-box.info-box-img-circle .text {
+  max-width: 332px;
 }
 
 .banner {
@@ -5431,20 +5446,30 @@ select {
   margin-bottom: 45px;
 }
 
+.industries {
+  margin-bottom: 94px;
+}
+.industries .title {
+  margin-bottom: 48px;
+}
+.industries .container > .row {
+  margin-bottom: 95px;
+}
+
 @media (max-width: 1200px) {
-  .info-box.info-box-horizontal {
-    padding: 20px;
-  }
   .info-box.info-box-horizontal .img-wrapper {
     margin-right: 20px;
   }
+  .info-box.info-box-img-circle .img-wrapper {
+    margin-right: 35px;
+  }
 }
 @media (max-width: 1100px) {
-  .info-box.info-box-horizontal {
-    padding: 10px;
-  }
   .info-box.info-box-horizontal .img-wrapper {
     margin-right: 15px;
+  }
+  .info-box.info-box-img-circle .img-wrapper {
+    margin-right: 20px;
   }
 }
 @media (max-width: 1024px) {
@@ -5627,6 +5652,17 @@ select {
   .projects .container > .row {
     margin-bottom: 20px;
   }
+
+  .industries-retreat {
+    margin-bottom: 40px;
+  }
+  .industries-retreat:last-child {
+    margin-bottom: 0;
+  }
+
+  .industries .container > .row {
+    margin-bottom: 50px;
+  }
 }
 @media (max-width: 767px) {
   .projects {
@@ -5684,10 +5720,22 @@ select {
     padding-top: 50px;
     padding-bottom: 50px;
   }
+
+  .info-box.info-box-img-circle .text {
+    max-width: 100%;
+  }
 }
 @media (max-width: 576px) {
   .col-bg {
     display: none;
+  }
+}
+@media (min-width: 768px) {
+  .industries-retreat {
+    margin-bottom: 90px;
+  }
+  .industries-retreat:nth-last-child(1), .industries-retreat:nth-last-child(2) {
+    margin-bottom: 0;
   }
 }
 

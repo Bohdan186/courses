@@ -81,6 +81,8 @@
 
 	.img-wrapper {
 		margin-bottom: 16px;
+		min-width: 73px;
+		min-height: 73px;
 	}
 
 	.top-subtitle {
@@ -103,8 +105,6 @@
 	&.info-box-horizontal {
 		display: flex;
 		align-items: center;
-		padding: 27px 35px;
-		border: 1px solid #E1EAEC;
 	
 		.img-wrapper {
 			margin-bottom: 0;
@@ -130,6 +130,11 @@
 		.title {
 			margin-bottom: 19px;
 		}
+	}
+
+	&.info-box-bordered {
+		padding: 27px 35px;
+		border: 1px solid #E1EAEC;
 	}
 }
 

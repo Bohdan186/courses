@@ -205,6 +205,7 @@
 	min-height: 100%;
 	background-color: #03B6E7;
 	transition: all .4s ease;
+	cursor: pointer;
 
 	.absolute {
 		@include absolute;
@@ -347,14 +348,6 @@
 	.title {
 		margin-bottom: 16px;
 	}
-
-	.info-box {
-		
-		.img-wrapper {
-			min-width: 73px;
-			min-height: 73px;
-		}
-	}
 }
 
 
@@ -362,35 +355,24 @@
 // Projects
 // ------------------------------------------	
 
+
 .projects {
 	margin-bottom: 94px;
-
-	.projects-banners {
-		margin-bottom: 46px;
-	}
 
 	h3 {
 		margin-bottom: 25px;
 	}
 
-	.row {
-
+	.container {
+		
 		> .row {
-			margin-bottom: 30px;
+			margin-bottom: 64px;
 		}
 	}
+}
 
-	.project-bottom-14 {
-		margin-bottom: 14px;
-	}
-
-	.project-bottom-30 {
-		margin-bottom: 30px;
-	}
-
-	.btn-wrapper {
-		text-align: center;
-	}
+.btn-wrapper {
+	text-align: center;
 }
 
 .project-gap {
@@ -634,6 +616,42 @@
 // SERVICE
 // ------------------------------------------------------------------------------------------------
 
+// ------------------------------------------
+// PRIMARY TITLE
+// ------------------------------------------
+
+.primary-title{
+	background: url("../img/primary-title-bg.jpg") center / cover no-repeat;
+	font-family: "Lato", sans-serif;
+	color: #1c1c1c;
+	min-height: 292px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 94px;
+
+	.inner {
+		display: flex;
+
+		.circle {
+			width: 54px;
+			height: 54px;
+			border-radius: 50%;
+			background-color: #FFAC55;
+		}
+		
+		h1	{
+			margin-bottom: 0;
+			margin-left: -27px;
+			font-weight: 300;
+			color: #1c1c1c;
+		}
+	}
+}
+
+// ------------------------------------------
+// SERVICE
+// ------------------------------------------
+
 .service-header {
 	display: flex;
 	justify-content: space-between;	
@@ -641,15 +659,14 @@
 	flex-wrap: wrap;
 	margin-bottom: 47px;
 
-	// form {
-	// 	flex-wrap: wrap;
-	// }
+	.title {
+		margin-right: 30px;
+	}
 
 }
 
 .services {
-	padding-top: 94px;
-	padding-bottom: 94px;
+	margin-bottom: 94px;
 
 	.row {
 
@@ -661,4 +678,22 @@
 
 .section-footer {
 	text-align: center;
+}
+
+// ------------------------------------------
+// FEATURED PROJECTS
+// ------------------------------------------
+
+.featured-projects {
+	padding-top: 94px;
+	padding-bottom: 94px;
+	background-color: #E7EFF1;
+
+	.title {
+		margin-bottom: 25PX;
+	}
+
+	.row {
+		margin-bottom: 45px;
+	}
 }

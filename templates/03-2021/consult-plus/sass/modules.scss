@@ -261,7 +261,19 @@
 // ------------------------------------------
 
 input[type=text] {
+	width: 100%;
+	height: 52px;
+	border: none;
 	text-transform: uppercase;
+	border-bottom: 1px solid #000;
+	color: #000;
+
+	&::placeholder {
+		color: #000;
+	}
+}
+input[type=submit] {
+	border: none;
 }
 
 select {
@@ -274,17 +286,18 @@ select {
 	display: flex;
 
 	input[type=text] {
-		width: 100%;
-		height: 52px;
-		border: none;
 		border-radius: 40px;
 		background-color: rgba(0,0,0,.1);
 		padding-left: 34px;
 		padding-right: 70px;
+		border: none;
+
+		&::placeholder {
+			color: inherit;
+		}
 	}
 	input[type=submit] {
 		margin-left: -60px;
-		border: none;
 	}
 }
 
@@ -304,14 +317,56 @@ select {
 				color: #FFAC56;
 			}
 		}
-		
-		// &:not(:last-child) {
-		// 	margin-bottom: 20px;
-		// }
+
 		a {
 			padding-top: 6px;
 			padding-bottom: 6px;
 			display: block;
+		}
+	}
+}
+
+// ------------------------------------------
+// BADGE SECTION
+// ------------------------------------------
+
+
+.badge-section {
+	box-shadow: 0px 9px 16px 0px rgba(154, 154, 154, .3);
+	min-width: 237px;
+	min-height: 280px;
+	background-color: #03B6E7;
+	border: 6px solid #fff;
+	text-align: center;
+	padding: 18px;
+
+	.bordered {
+		border: 1px solid #fff;
+	}
+	
+	.badge_icon {
+		justify-content: center;
+		margin-bottom: 21px;
+	}
+	
+	.text {
+		line-height: 1.2;
+		margin-bottom: 19px;
+	
+		span {
+			font-size: 75px;
+		}
+	
+		.subtitle {
+			font-size: 10px;
+			text-transform: uppercase;
+		}
+	}
+
+	&.badge-section-large {
+		
+		.bordered {
+			margin-bottom: 58px;
 		}
 	}
 }

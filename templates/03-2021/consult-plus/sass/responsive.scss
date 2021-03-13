@@ -184,6 +184,31 @@
 	.info-box {
 		margin-bottom: 30px;
 	}
+
+	.left-text {
+		max-width: 100%;
+	}
+
+	.right-text {
+
+		p {
+			max-width: 100%;
+			padding-right: 15px;
+		}	
+
+		.badge-section-wrapper {
+			display: none;
+		}
+	}
+
+	.core {
+		margin-top: 0;
+		margin-bottom: 94px;
+		padding-top: 60px;
+		padding-bottom: 60px;
+		background-color: #E7EFF1;
+	}
+
 }
 
 @media (max-width: 768px){

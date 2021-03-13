@@ -287,39 +287,6 @@
 	display: flex;
 	justify-content: center;
 	margin-top: -20.04%;
-
-	.badge-section {
-		box-shadow: 0px 9px 16px 0px rgba(154, 154, 154, .3);
-		min-width: 237px;
-		min-height: 280px;
-		background-color: #03B6E7;
-		border: 6px solid #fff;
-		text-align: center;
-		padding: 18px;
-	}
-
-	.inner {
-		border: 1px solid #fff;
-	}
-
-	.badge_icon {
-		justify-content: center;
-		margin-bottom: 21px;
-	}
-
-	.text {
-		line-height: 1.2;
-		margin-bottom: 19px;
-
-		span {
-			font-size: 75px;
-		}
-
-		.subtitle {
-			font-size: 10px;
-			text-transform: uppercase;
-		}
-	}
 }
 
 // ------------------------------------------
@@ -717,4 +684,30 @@
 	> div[class*="col-"] {
 		margin-bottom: 30px;
 	}
+}
+
+.left-text {
+	max-width: 500px;
+}
+
+.right-text {
+    display: flex;
+    justify-content: space-between;
+
+	p {
+		max-width: 278px;
+		padding-right: 15px;
+	}
+
+	.badge-section-wrapper {
+		margin-top: -15%;
+	}
+}
+
+.core {
+	margin-top: -94px;
+	margin-bottom: 88px;
+	padding-top: 94px;
+    padding-bottom: 82px;
+	background-color: #E7EFF1;
 }

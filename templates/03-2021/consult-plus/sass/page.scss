@@ -185,18 +185,6 @@
 	&:nth-last-child(2) {
 		border-bottom: none;
 	}
-
-	&:last-child {
-
-		.header-box {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			padding: 0;
-		}
-	}
-
-
 }
 
 .header-box {
@@ -234,6 +222,10 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+	}
+
+	.text {
+		flex-grow: 1;
 	}
 
 	.img-wrapper{
@@ -714,5 +706,15 @@
 		> .row {
 			margin-bottom: 95px;
 		}
+	}
+}
+
+
+//----------------------------
+.spacing-30 {
+	margin-bottom: -30px;
+
+	> div[class*="col-"] {
+		margin-bottom: 30px;
 	}
 }

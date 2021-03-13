@@ -4726,6 +4726,7 @@ select {
   padding: 17px 27px;
   background-color: #16D428;
   z-index: 1;
+  cursor: pointer;
 }
 .button:hover {
   background-color: #09DF1E;
@@ -4886,6 +4887,10 @@ select {
 .banner:hover::before {
   border-bottom-color: #F6A149;
   border-left-color: #F6A149;
+}
+
+input[type=text] {
+  text-transform: uppercase;
 }
 
 select {
@@ -5071,12 +5076,6 @@ select {
 .header-box-wrapper:nth-last-child(1), .header-box-wrapper:nth-last-child(2) {
   border-bottom: none;
 }
-.header-box-wrapper:last-child .header-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-}
 
 .header-box {
   position: relative;
@@ -5110,6 +5109,9 @@ select {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.header-box .text {
+  flex-grow: 1;
 }
 .header-box .img-wrapper {
   margin-bottom: 9px;
@@ -5456,6 +5458,13 @@ select {
   margin-bottom: 95px;
 }
 
+.spacing-30 {
+  margin-bottom: -30px;
+}
+.spacing-30 > div[class*=col-] {
+  margin-bottom: 30px;
+}
+
 @media (max-width: 1200px) {
   .info-box.info-box-horizontal .img-wrapper {
     margin-right: 20px;
@@ -5576,16 +5585,8 @@ select {
     margin-bottom: 40px;
   }
 
-  .projects .container > .row {
-    margin-bottom: 40px;
-  }
-
   .news-letter-wrapper {
     max-width: 100%;
-  }
-
-  .banner {
-    margin-bottom: 30px;
   }
 
   .info-box {

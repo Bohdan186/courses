@@ -40,6 +40,7 @@
 	padding: 17px 27px;
 	background-color: #16D428;
 	z-index: 1;
+	cursor: pointer;
 
 	&:hover{
 		background-color: #09DF1E;
@@ -258,6 +259,10 @@
 // ------------------------------------------
 // FORM
 // ------------------------------------------
+
+input[type=text] {
+	text-transform: uppercase;
+}
 
 select {
     height: 40px;

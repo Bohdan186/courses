@@ -293,11 +293,11 @@
 // OUR STEPS
 // ------------------------------------------
 
-.our-steps {
+.our-steps, .core {
 	margin-top: -94px;
 	margin-bottom: 88px;
 	padding-top: 94px;
-    padding-bottom: 82px;
+    padding-bottom: 88px;
 	background-color: #E7EFF1;
 
 	h3 {
@@ -325,7 +325,7 @@
 	.container {
 		
 		> .row {
-			margin-bottom: 64px;
+			margin-bottom: 15px;
 		}
 	}
 }
@@ -513,7 +513,7 @@
 // ------------------------------------------
 
 .contact-us {
-	margin-bottom: 94px;
+	margin-bottom: 95px;
 
 	.title {
 		margin-bottom: 15px;
@@ -702,12 +702,4 @@
 	.badge-section-wrapper {
 		margin-top: -15%;
 	}
-}
-
-.core {
-	margin-top: -94px;
-	margin-bottom: 88px;
-	padding-top: 94px;
-    padding-bottom: 82px;
-	background-color: #E7EFF1;
 }

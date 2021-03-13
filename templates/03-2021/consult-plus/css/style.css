@@ -5200,17 +5200,17 @@ select {
   margin-top: -20.04%;
 }
 
-.our-steps {
+.our-steps, .core {
   margin-top: -94px;
   margin-bottom: 88px;
   padding-top: 94px;
-  padding-bottom: 82px;
+  padding-bottom: 88px;
   background-color: #E7EFF1;
 }
-.our-steps h3 {
+.our-steps h3, .core h3 {
   margin-bottom: 7px;
 }
-.our-steps .title {
+.our-steps .title, .core .title {
   margin-bottom: 16px;
 }
 
@@ -5221,7 +5221,7 @@ select {
   margin-bottom: 25px;
 }
 .projects .container > .row {
-  margin-bottom: 64px;
+  margin-bottom: 15px;
 }
 
 .btn-wrapper {
@@ -5362,7 +5362,7 @@ select {
 }
 
 .contact-us {
-  margin-bottom: 94px;
+  margin-bottom: 95px;
 }
 .contact-us .title {
   margin-bottom: 15px;
@@ -5495,14 +5495,6 @@ select {
 }
 .right-text .badge-section-wrapper {
   margin-top: -15%;
-}
-
-.core {
-  margin-top: -94px;
-  margin-bottom: 88px;
-  padding-top: 94px;
-  padding-bottom: 82px;
-  background-color: #E7EFF1;
 }
 
 @media (max-width: 1200px) {

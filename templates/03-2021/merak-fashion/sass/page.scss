@@ -6,6 +6,10 @@
 	color: $primary-color;
 }
 
+.absolute {
+	@include absolute;
+}
+
 // ------------------------------------------------------------------------------------------------
 // PRIMARY PAGE STYLE
 // ------------------------------------------------------------------------------------------------
@@ -219,6 +223,7 @@
 				background-color: $primary-color;
 				opacity: 0;
 				visibility: hidden;
+				transition: $transition;
 			}
 
 			i {
@@ -227,7 +232,8 @@
 			}
 		}
 
-		&:hover {
+		&:hover,
+		&.active {
 			a {
 				&::after {
 					opacity: 1;

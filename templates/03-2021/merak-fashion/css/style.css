@@ -4849,6 +4849,9 @@ button {
   color: rgba(16, 16, 16, 0.8);
   font-size: 14px;
 }
+.button:hover {
+  background-color: #cccccc;
+}
 .button.btn-large {
   padding: 15px 70px;
 }
@@ -4864,14 +4867,20 @@ button {
 .button.btn-primary-color {
   background-color: #da8a67;
 }
+.button.btn-primary-color:hover {
+  background-color: #b0532b;
+}
 .button.btn-dark-color {
   background-color: #333333;
 }
-.button.btn-light-color {
-  background-color: #fff;
+.button.btn-dark-color:hover {
+  background-color: black;
 }
 .button.btn-none-color {
   background-color: transparent;
+}
+.button.btn-none-color:hover {
+  color: #da8a67;
 }
 .button.btn-text-white {
   color: #fff;
@@ -4884,8 +4893,14 @@ button {
 .button.btn-square.btn-square-bgc-1 {
   background-color: #A3B2A4;
 }
+.button.btn-square.btn-square-bgc-1:hover {
+  background-color: #6d826e;
+}
 .button.btn-square.btn-square-bgc-2 {
   background-color: #D6575E;
+}
+.button.btn-square.btn-square-bgc-2:hover {
+  background-color: #a0272e;
 }
 .button.btn-bordered {
   border: 1px solid rgba(16, 16, 16, 0.05);
@@ -4894,20 +4909,31 @@ button {
 .banner {
   position: relative;
 }
+.banner .img-wrapper {
+  overflow: hidden;
+}
 .banner .img-wrapper img {
   width: 100%;
+}
+.banner .img-wrapper .img-inner {
+  transition: all 0.4s ease;
+}
+.banner:hover .img-inner {
+  transform: scale(1.1);
 }
 .banner .content {
   position: absolute;
   left: 0;
-  top: 0;
+  top: 50%;
   bottom: 0;
   right: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  transform: translate(0, -50%);
   max-width: 280px;
   padding: 40px;
+}
+.banner .content a {
+  z-index: 1;
+  position: relative;
 }
 .banner.banner-large .content {
   max-width: 440px;
@@ -4918,6 +4944,12 @@ button {
 }
 .banner.banner-large .btn-wrapper .button:not(:last-child) {
   margin-right: 20px;
+}
+.banner.banner-to-action .content {
+  top: auto;
+  transform: none;
+  padding: 30px;
+  background-color: #FBF3F0;
 }
 
 .search-wrapper {
@@ -4964,6 +4996,14 @@ button {
 
 .primary-color {
   color: #da8a67;
+}
+
+.absolute {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .container {
@@ -5127,12 +5167,13 @@ button {
   background-color: #da8a67;
   opacity: 0;
   visibility: hidden;
+  transition: all 0.4s ease;
 }
 .main-nav li a i {
   width: 20px;
   text-align: center;
 }
-.main-nav li:hover a::after {
+.main-nav li:hover a::after, .main-nav li.active a::after {
   opacity: 1;
   visibility: visible;
 }

@@ -1,4 +1,12 @@
 // ------------------------------------------------------------------------------------------------
+// CLASS HELPER
+// ------------------------------------------------------------------------------------------------
+
+.primary-color {
+	color: $primary-color;
+}
+
+// ------------------------------------------------------------------------------------------------
 // PRIMARY PAGE STYLE
 // ------------------------------------------------------------------------------------------------
 
@@ -103,11 +111,17 @@
 }
 
 .logo {
-	max-width: 150px;
+	width: 150px;
+	flex-shrink: 0;
 }
 
 .header-actions {
 	display: flex;
+
+	i {
+		font-size: 20px;
+		margin-right: 5px;
+	}
 
 	div {
 		margin-right: 20px;
@@ -125,11 +139,7 @@
 .account,
 .wish,
 .bag {
-
-	img {
-		width: 20px;
-		margin-right: 5px;
-	}
+    white-space: nowrap;
 }
 
   
@@ -165,53 +175,6 @@
 	justify-content: flex-end;
 }
 
-// ------------------------------------------
-// VERTICAL MENU
-// ------------------------------------------
-
-.vertical-menu-wrapper {
-	max-width: 295px;
-}
-
-.vertical-menu {
-	position: relative;
-	min-width: 280px;
-	background-color: $primary-color;
-
-	
-
-	li:first-child:hover {
-
-		> a {
-			color: rosybrown;
-		}
-	}
-	
-//	При наведені на будьяку лі ховериться перша, ВИПРАВИТИ!
-
-	> li {
-
-		display: flex;
-		align-items: center;
-		padding-left: 5px;
-		padding-right: 5px;
-
-		> a {
-			color: #fff;
-			margin-right: 50px;
-		}
-
-		i {
-			color: #fff;
-			padding: 15px;
-		}
-	}
-}
-
-.sub-menu {
-	position: absolute;
-    top: 60px;
-}
 
 // ------------------------------------------
 // MAIN NAV
@@ -230,17 +193,44 @@
 }
 
 .main-nav-wrapper {
-	margin-left: -12px;
+	margin-left: -15px;
 }
 
 .main-nav {
 	display: flex;
 
 	li {
+		position: relative;
 
 		a {
-			padding-left: 12px;
-			padding-right: 12px;
+			padding-left: 15px;
+			padding-right: 15px;
+
+			&::after {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				height: 3px;
+				background-color: $primary-color;
+				opacity: 0;
+				visibility: hidden;
+			}
+
+			i {
+				width: 20px;
+				text-align: center;
+			}
+		}
+
+		&:hover {
+			a {
+				&::after {
+					opacity: 1;
+					visibility: visible;
+				}
+			}
 		}
 	}
 }
@@ -258,4 +248,102 @@
 	.main-nav {
 	   margin-right: -15px;
 	}
+}
+
+// ------------------------------------------
+// VERTICAL MENU
+// ------------------------------------------
+
+.vertical-menu-wrapper {
+	max-width: 295px;
+    margin-right: 5px;
+}
+
+.vertical-menu {
+	position: relative;
+	min-width: 280px;
+	background-color: $primary-color;
+
+	> li:first-child {
+		>a {
+			&:hover {
+				color: #fff;
+			}
+
+			i {
+				color: #fff;
+
+				&:first-child {
+					text-align: center;
+				}
+			}
+		}
+	
+	}
+	
+	li {
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		
+		i {
+			color: rgba(16, 16, 16, 0.4);
+			width: 50px;
+		}
+
+		a {
+			flex-grow: 1;
+		}
+
+		span {
+			flex-grow: 1;
+		}
+
+	}
+
+	> li {
+
+		> a {
+			color: #fff;
+		}
+	}
+}
+
+.sub-menu {
+	position: absolute;
+    top: 100%;
+	left: 0;
+	width: 100%;
+    border: 1px solid rgba(16, 16, 16, 0.05);
+	
+	li {
+	  position: relative;
+
+		a {
+		  height: 50px;
+		}
+
+		&:not(:last-child) {
+			
+			&::after {
+				content: "";
+				position: absolute;
+				left: 20px;
+				right: 20px;
+				bottom: 0;
+				height: 1px;
+				background-color: rgba(16, 16, 16, 0.05);
+			}
+			
+		}
+	}
+	
+}
+
+.burger {
+	display: none;
+	font-size: 30px;
+	color: $primary-color;
+	padding: 10px;
+	line-height: 1;
 }

@@ -261,11 +261,13 @@
 // FORM
 // ------------------------------------------
 
-.search {
+.search-wrapper {
+	flex-basis: 580px;
+}
 
-	form {
-		position: relative;
-	}
+.search {
+	position: relative;
+	flex-grow: 1;
 
 	button {
 		position: absolute;
@@ -274,12 +276,18 @@
 		bottom: 0;
 		width: 40px;
 		padding: 0;
+		background-color: transparent;
+
+		i {
+			color: rgba(16, 16, 16, 0.5);
+			font-size: 16px;
+		}
 	}
 
 	input[type=text] {
 		padding-left: 40px;
-		min-width: 580px;
 		color:rgba(16, 16, 16, 0.5);
+		font-weight: 500;
 
 		&::placeholder {
 			color:rgba(16, 16, 16, 0.5);
@@ -289,14 +297,16 @@
 
 	select {
 		position: absolute;
-		right: 0;
-		top: 0;
-		bottom: 0;
+		right: 20px;
+		top: 0px;
+		bottom: 0px;
 		padding: 0;
 		width: 144px;
 		padding-left: 20px;
-		color: rgba(16, 16, 16, .8);
+		color: rgba(16, 16, 16, 0.8);
 		text-transform: capitalize;
+		// border-left: none;
+		border-right: none;
 	}
 }
 

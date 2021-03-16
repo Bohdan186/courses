@@ -1,0 +1,261 @@
+// ------------------------------------------------------------------------------------------------
+// PRIMARY PAGE STYLE
+// ------------------------------------------------------------------------------------------------
+
+.container {
+	max-width: 1210px;
+}
+
+// ------------------------------------------
+// HEADER
+// ------------------------------------------
+
+.header-general {
+
+	
+	color:rgba(16, 16, 16, 0.8);
+	
+	p {
+		margin-bottom: 0;
+	}
+
+	a {
+		color: inherit;
+
+		&:hover {
+			color: $primary-color;
+		}
+	}
+
+	ul, ol {
+		list-style: none;
+		margin-bottom: 0;
+	}
+	
+	ul,
+	li {
+		padding: 0;
+	}
+}
+
+.header-top {
+	background-color: $primary-color;
+	margin-bottom: 20px;
+	font-size: 13px;
+
+	.header-row-inner {
+		height: 40px;
+	}
+}
+
+.contact {
+	margin-right: 20px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+
+.content {
+	display: flex;
+	align-items: center;
+	min-height: 20px;
+
+	div {
+		padding-left: 10px;
+		padding-right: 10px;
+		border-right: 1px solid rgba(255,255, 255, 0.1);
+
+		&:last-child {
+			padding-right: 0;
+			border-right: none;
+		}
+	}
+
+	.usd, .usa {
+		text-transform: uppercase;
+
+		i {
+			color: rgba(255,255, 255, 0.4);
+			margin-left: 5px;
+			font-size: 12px;
+		}
+	}
+
+	.usa {
+
+		img {
+			width: 20px;
+			margin-right: 5px;
+		}
+	}
+	
+}
+  
+.header-main {
+	margin-bottom: 20px;
+	font-size: 13px;
+	
+	.header-row-inner {
+	  height: 60px;
+	}
+}
+
+.logo {
+	max-width: 150px;
+}
+
+.header-actions {
+	display: flex;
+
+	div {
+		margin-right: 20px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	span {
+		color: rgba(16, 16, 16, 0.5);
+	}
+}
+
+.account,
+.wish,
+.bag {
+
+	img {
+		width: 20px;
+		margin-right: 5px;
+	}
+}
+
+  
+.header-bottom {
+	border-bottom: 1px solid #F5F5F5;
+	
+	.header-row-inner {
+	  height: 60px;
+	}
+}
+  
+.header-row-inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+// ------------------------------------------
+// HEADER COLUMNS
+// ------------------------------------------
+  
+.header-col {
+	display: flex;
+	flex-grow: 1;
+}
+  
+.header-col-left {
+	padding-right: 15px;
+}
+  
+.header-col-right {
+	padding-left: 15px;
+	justify-content: flex-end;
+}
+
+// ------------------------------------------
+// VERTICAL MENU
+// ------------------------------------------
+
+.vertical-menu-wrapper {
+	max-width: 295px;
+}
+
+.vertical-menu {
+	position: relative;
+	min-width: 280px;
+	background-color: $primary-color;
+
+	
+
+	li:first-child:hover {
+
+		> a {
+			color: rosybrown;
+		}
+	}
+	
+//	При наведені на будьяку лі ховериться перша, ВИПРАВИТИ!
+
+	> li {
+
+		display: flex;
+		align-items: center;
+		padding-left: 5px;
+		padding-right: 5px;
+
+		> a {
+			color: #fff;
+			margin-right: 50px;
+		}
+
+		i {
+			color: #fff;
+			padding: 15px;
+		}
+	}
+}
+
+.sub-menu {
+	position: absolute;
+    top: 60px;
+}
+
+// ------------------------------------------
+// MAIN NAV
+// ------------------------------------------
+
+.header-menu {
+
+	li {
+	  
+		a {
+		  display: flex;
+		  align-items: center;
+		  height: 60px;
+		}
+	}
+}
+
+.main-nav-wrapper {
+	margin-left: -12px;
+}
+
+.main-nav {
+	display: flex;
+
+	li {
+
+		a {
+			padding-left: 12px;
+			padding-right: 12px;
+		}
+	}
+}
+  
+.header-col-left {
+  
+	.main-nav {
+	   margin-left: -15px;
+	}
+}
+  
+  
+.header-col-right {
+  
+	.main-nav {
+	   margin-right: -15px;
+	}
+}

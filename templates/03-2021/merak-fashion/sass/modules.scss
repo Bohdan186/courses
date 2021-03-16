@@ -36,8 +36,46 @@
 	background-color: #fff;
 	font-weight: 600;
 	color: rgba(16, 16, 16, 0.8);
-	font-size: 16px;
+	font-size: 14px;
 
+	//**** BUTTON SIZE ****//
+
+	&.btn-large {
+		padding: 15px 70px;
+	}
+	&.btn-medium {
+		padding: 15px 30px;
+	}
+	&.btn-small {
+		padding: 15px 25px;
+	}
+	&.btn-x-small {
+		padding: 15px 20px;
+	}
+
+	//**** BUTTON BG COLOR ****//
+
+	&.btn-primary-color {
+		background-color: $primary-color;
+	}
+	&.btn-dark-color {
+		background-color: #333333;
+	}
+	&.btn-light-color {
+		background-color: #fff;
+	}
+	&.btn-none-color {
+		background-color: transparent;
+	}
+
+	//**** BUTTON TEXT COLOR ****//
+
+	&.btn-text-white {
+		color: #fff;
+	}
+
+	//**** TYPE BUTTON ****//
+	
 	&.btn-square {
 		padding: 0;
 		width: 30px;
@@ -50,6 +88,11 @@
 			background-color: #D6575E;
 		}
 	}
+
+	&.btn-bordered {
+		border: 1px solid rgba(16, 16, 16, 0.05);
+	}
+
 }
 
 // ------------------------------------------

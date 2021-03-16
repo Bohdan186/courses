@@ -4847,7 +4847,34 @@ button {
   background-color: #fff;
   font-weight: 600;
   color: rgba(16, 16, 16, 0.8);
-  font-size: 16px;
+  font-size: 14px;
+}
+.button.btn-large {
+  padding: 15px 70px;
+}
+.button.btn-medium {
+  padding: 15px 30px;
+}
+.button.btn-small {
+  padding: 15px 25px;
+}
+.button.btn-x-small {
+  padding: 15px 20px;
+}
+.button.btn-primary-color {
+  background-color: #da8a67;
+}
+.button.btn-dark-color {
+  background-color: #333333;
+}
+.button.btn-light-color {
+  background-color: #fff;
+}
+.button.btn-none-color {
+  background-color: transparent;
+}
+.button.btn-text-white {
+  color: #fff;
 }
 .button.btn-square {
   padding: 0;
@@ -4859,6 +4886,9 @@ button {
 }
 .button.btn-square.btn-square-bgc-2 {
   background-color: #D6575E;
+}
+.button.btn-bordered {
+  border: 1px solid rgba(16, 16, 16, 0.05);
 }
 
 .banner {
@@ -5250,7 +5280,6 @@ button {
 
   .button {
     padding: 12px 28px;
-    font-size: 14px;
   }
   .button.btn-square {
     width: 26px;

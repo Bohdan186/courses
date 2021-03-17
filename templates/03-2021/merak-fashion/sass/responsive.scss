@@ -20,6 +20,9 @@
 	.burger {
 		display: block;
 	}
+	.tabs-menu {
+		display: none;
+	}
 }
 
 @media (max-width: 768px) {
@@ -62,7 +65,7 @@
 	
 	.banner {
 
-		.content {
+		.content-wrapper {
 			padding: 20px;
 		}
 
@@ -81,6 +84,10 @@
 			width: 26px;
 			height: 26px;
 		}
+	}
+
+	.first-screen {
+		margin-bottom: 40px;
 	}
 }
 
@@ -109,14 +116,10 @@
 	
 	.banner {
 
-		.content {
-			padding: 5px;
-		}
-
 		&.banner-large {
 
 			.content {
-				max-width: 310px;
+				max-width: 100%;
 			}
 
 			.btn-wrapper {
@@ -140,4 +143,20 @@
 			height: 24px;
 		}
 	}
+}
+
+
+@media (max-width: 360px) {
+	.header-top {
+		display: none;
+	}
+	.banner-large {
+		.content {
+			p {
+				display: none;
+			}
+		}
+	}
+
+
 }

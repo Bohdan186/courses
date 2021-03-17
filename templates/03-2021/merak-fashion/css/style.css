@@ -4663,6 +4663,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: "Spartan", sans-serif;
   margin-bottom: 30px;
   color: rgba(16, 16, 16, 0.9);
   font-weight: 500;
@@ -4848,6 +4849,8 @@ button {
   font-weight: 600;
   color: rgba(16, 16, 16, 0.8);
   font-size: 14px;
+  display: flex;
+  align-items: center;
 }
 .button:hover {
   background-color: #cccccc;
@@ -4863,6 +4866,10 @@ button {
 }
 .button.btn-x-small {
   padding: 15px 20px;
+}
+.button.btn-xx-small {
+  padding: 10px 20px;
+  height: 40px;
 }
 .button.btn-primary-color {
   background-color: #da8a67;
@@ -4886,9 +4893,18 @@ button {
   color: #fff;
 }
 .button.btn-square {
+  justify-content: center;
+  align-items: center;
   padding: 0;
   width: 30px;
   height: 30px;
+  background-color: #fff;
+}
+.button.btn-square:hover {
+  background-color: #cccccc;
+}
+.button.btn-square i {
+  font-size: 20px;
 }
 .button.btn-square.btn-square-bgc-1 {
   background-color: #A3B2A4;
@@ -4902,8 +4918,120 @@ button {
 .button.btn-square.btn-square-bgc-2:hover {
   background-color: #a0272e;
 }
+.button.btn-square.btn-square-bgc-3 {
+  background-color: #2A767A;
+}
+.button.btn-square.btn-square-bgc-3:hover {
+  background-color: #102d2e;
+}
+.button.btn-square.btn-square-bgc-4 {
+  background-color: #FFC7C7;
+}
+.button.btn-square.btn-square-bgc-4:hover {
+  background-color: #ff6161;
+}
+.button.btn-square.btn-square-bgc-5 {
+  background-color: #164F58;
+}
+.button.btn-square.btn-square-bgc-5:hover {
+  background-color: #020606;
+}
+.button.btn-square.btn-square-bgc-6 {
+  background-color: #ECC3DB;
+}
+.button.btn-square.btn-square-bgc-6:hover {
+  background-color: #d376ad;
+}
+.button.btn-square.btn-square-bgc-7 {
+  background-color: #EEEEEE;
+}
+.button.btn-square.btn-square-bgc-7:hover {
+  background-color: #bbbbbb;
+}
+.button.btn-square.btn-small {
+  width: 15px;
+  height: 15px;
+}
+.button.btn-square.btn-large {
+  width: 40px;
+  height: 40px;
+}
 .button.btn-bordered {
   border: 1px solid rgba(16, 16, 16, 0.05);
+}
+
+.product .btn-wrapper,
+.product .btn-inner {
+  display: flex;
+  align-items: center;
+}
+.product .img-wrapper {
+  margin-bottom: 20px;
+  position: relative;
+}
+.product .img-wrapper img {
+  width: 100%;
+}
+.product .img-wrapper:hover .inner {
+  opacity: 1;
+  visibility: visible;
+}
+.product .inner {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+}
+.product .inner .content {
+  padding: 15px;
+  display: flex;
+  align-items: flex-end;
+}
+.product .inner .content .btn-xx-small i {
+  margin-left: 5px;
+  transition: all 0.4s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+.product .inner .content .btn-xx-small:hover i {
+  opacity: 1;
+  visibility: visible;
+}
+.product .inner .btn-wrapper {
+  justify-content: center;
+}
+.product .inner .btn-wrapper .button {
+  z-index: 1;
+}
+.product .inner .btn-wrapper .button:not(:last-child) {
+  margin-right: 5px;
+}
+.product .content .first-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.product .content .button:not(:last-child) {
+  margin-right: 5px;
+}
+.product .content h6 {
+  margin-bottom: 0;
+}
+.product .content .price {
+  font-family: "Spartan", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #da8a67;
+}
+.product > .content a {
+  color: #101010;
+}
+.product > .content a:hover {
+  color: #da8a67;
 }
 
 .banner {
@@ -4921,15 +5049,19 @@ button {
 .banner:hover .img-inner {
   transform: scale(1.1);
 }
-.banner .content {
+.banner .content-wrapper {
   position: absolute;
-  left: 0;
-  top: 50%;
+  top: 0;
   bottom: 0;
+  left: 0;
   right: 0;
-  transform: translate(0, -50%);
-  max-width: 280px;
   padding: 40px;
+  display: flex;
+  align-items: center;
+}
+.banner .content {
+  max-width: 280px;
+  padding: 20px 0;
 }
 .banner .content a {
   z-index: 1;
@@ -5020,6 +5152,10 @@ button {
   right: 0;
 }
 
+.spacing-bottom-40 > [class*=col-] {
+  margin-bottom: 40px;
+}
+
 .container {
   max-width: 1210px;
 }
@@ -5036,7 +5172,8 @@ button {
 .header-general a:hover {
   color: #da8a67;
 }
-.header-general ul, .header-general ol {
+.header-general ul,
+.header-general ol {
   list-style: none;
   margin-bottom: 0;
 }
@@ -5069,6 +5206,7 @@ button {
 }
 .header-top .content .usd, .header-top .content .usa {
   text-transform: uppercase;
+  cursor: pointer;
 }
 .header-top .content .usd i, .header-top .content .usa i {
   color: rgba(255, 255, 255, 0.4);
@@ -5163,9 +5301,13 @@ button {
 
 .main-nav {
   display: flex;
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0;
 }
 .main-nav li {
   position: relative;
+  padding: 0;
 }
 .main-nav li a {
   padding-left: 15px;
@@ -5269,6 +5411,37 @@ button {
   color: #da8a67;
   padding: 10px;
   line-height: 1;
+  margin-right: -10px;
+}
+
+.first-screen {
+  margin-bottom: 80px;
+}
+
+.products {
+  margin-bottom: 40px;
+}
+
+.head-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.head-section .title {
+  margin-right: 20px;
+}
+
+.tabs-menu li a {
+  color: rgba(16, 16, 16, 0.7);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.tabs-menu li.active a {
+  font-weight: 500;
+}
+.tabs-menu li:hover a, .tabs-menu li.active a {
+  color: rgba(16, 16, 16, 0.9);
 }
 
 @media (max-width: 991px) {
@@ -5287,6 +5460,10 @@ button {
 
   .burger {
     display: block;
+  }
+
+  .tabs-menu {
+    display: none;
   }
 }
 @media (max-width: 768px) {
@@ -5326,7 +5503,7 @@ button {
     margin-bottom: 15px;
   }
 
-  .banner .content {
+  .banner .content-wrapper {
     padding: 20px;
   }
   .banner.banner-large .content {
@@ -5339,6 +5516,10 @@ button {
   .button.btn-square {
     width: 26px;
     height: 26px;
+  }
+
+  .first-screen {
+    margin-bottom: 40px;
   }
 }
 @media (max-width: 576px) {
@@ -5363,11 +5544,8 @@ button {
     margin-bottom: 10px;
   }
 
-  .banner .content {
-    padding: 5px;
-  }
   .banner.banner-large .content {
-    max-width: 310px;
+    max-width: 100%;
   }
   .banner.banner-large .btn-wrapper .button:not(:last-child) {
     margin-right: 16px;
@@ -5380,5 +5558,14 @@ button {
   .button.btn-square {
     width: 24px;
     height: 24px;
+  }
+}
+@media (max-width: 360px) {
+  .header-top {
+    display: none;
+  }
+
+  .banner-large .content p {
+    display: none;
   }
 }

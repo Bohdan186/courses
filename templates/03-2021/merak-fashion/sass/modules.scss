@@ -37,6 +37,8 @@
 	font-weight: 600;
 	color: rgba(16, 16, 16, 0.8);
 	font-size: 14px;
+	display: flex;
+	align-items: center;
 
 	&:hover {
 		background-color: darken($color: #fff, $amount: 20%);
@@ -55,6 +57,10 @@
 	}
 	&.btn-x-small {
 		padding: 15px 20px;
+	}
+	&.btn-xx-small {
+		padding: 10px 20px;
+		height: 40px;
 	}
 
 	//**** BUTTON BG COLOR ****//
@@ -90,9 +96,22 @@
 	//**** TYPE BUTTON ****//
 	
 	&.btn-square {
+		justify-content: center;
+		align-items: center;
 		padding: 0;
 		width: 30px;
 		height: 30px;
+		background-color: #fff;
+
+		&:hover {
+			background-color: darken($color: #fff, $amount: 20%);
+		}
+
+		i {
+			font-size: 20px;
+		}
+
+		//**** SQUARE BG COLOR ****//
 
 		&.btn-square-bgc-1 {
 			background-color: #A3B2A4;
@@ -108,6 +127,53 @@
 				background-color: darken($color: #D6575E, $amount: 20%);
 			}
 		}
+		&.btn-square-bgc-3 {
+			background-color: #2A767A;
+
+			&:hover {
+				background-color: darken($color: #2A767A, $amount: 20%);
+			}
+		}
+		&.btn-square-bgc-4 {
+			background-color: #FFC7C7;
+
+			&:hover {
+				background-color: darken($color: #FFC7C7, $amount: 20%);
+			}
+		}
+		&.btn-square-bgc-5 {
+			background-color: #164F58;
+
+			&:hover {
+				background-color: darken($color: #164F58, $amount: 20%);
+			}
+		}
+		&.btn-square-bgc-6 {
+			background-color: #ECC3DB;
+
+			&:hover {
+				background-color: darken($color: #ECC3DB, $amount: 20%);
+			}
+		}
+		
+		&.btn-square-bgc-7 {
+			background-color: #EEEEEE;
+
+			&:hover {
+				background-color: darken($color: #EEEEEE, $amount: 20%);
+			}
+		}
+
+		//**** SQUARE SIZE ****//
+
+		&.btn-small {
+			width: 15px;
+			height: 15px;
+		}
+		&.btn-large {
+			width: 40px;
+			height: 40px;
+		}
 	}
 
 	&.btn-bordered {
@@ -117,10 +183,118 @@
 }
 
 // ------------------------------------------
-// INFO BOX
+// PRODUCTS
 // ------------------------------------------
 
+.product {
 
+	.btn-wrapper, 
+	.btn-inner {
+		display: flex;
+		align-items: center;
+	}
+
+	.img-wrapper{
+		margin-bottom: 20px;
+		position: relative;
+
+		img {
+			width: 100%;
+		}
+		
+
+		&:hover {
+
+			.inner {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+
+	
+	.inner {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		opacity: 0;
+		visibility: hidden;
+		transition: $transition;
+
+		.content {
+			padding: 15px;
+			display: flex;
+			align-items: flex-end;
+
+			.btn-xx-small {
+				i {
+					margin-left: 5px;
+					transition: $transition;
+					opacity: 0;
+					visibility: hidden;
+				}
+
+				&:hover {
+					i {
+						opacity: 1;
+						visibility: visible;
+					}
+				}
+			}
+		}
+
+		.btn-wrapper {
+			justify-content: center;
+
+			.button {
+				z-index: 1;
+
+				&:not(:last-child) {
+					margin-right: 5px;
+				}
+			}
+		}
+	}
+
+	.content {
+		
+		.first-line	{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 10px;
+		}
+
+		.button {
+			
+			&:not(:last-child) {
+				margin-right: 5px;
+			}
+		}
+
+		h6 {
+			margin-bottom: 0;
+		}
+
+		.price {
+			font-family: "Spartan", sans-serif;
+			font-size: 15px;
+			font-weight: 500;
+			color: $primary-color;
+		}
+	}
+
+	> .content {
+		a {
+			color: #101010;
+
+			&:hover {
+				color: $primary-color;
+			}
+		}
+	}
+}
 
 // ------------------------------------------
 // BANNERS
@@ -148,16 +322,16 @@
 		}
 	}
 	
+	.content-wrapper {
+		@include absolute;
+		padding: 40px;
+		display: flex;
+		align-items: center;
+	}
 
 	.content {
-		position: absolute;
-		left: 0;
-		top: 50%;
-		bottom: 0;
-		right: 0;
-		transform: translate(0, -50%);
 		max-width: 280px;
-		padding: 40px;
+		padding: 20px 0;
 
 		a {
 			z-index: 1;

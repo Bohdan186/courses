@@ -10,6 +10,13 @@
 	@include absolute;
 }
 
+.spacing-bottom-40 {
+
+	> [class*="col-"] {
+		margin-bottom: 40px;
+	}
+}
+
 // ------------------------------------------------------------------------------------------------
 // PRIMARY PAGE STYLE
 // ------------------------------------------------------------------------------------------------
@@ -39,7 +46,8 @@
 		}
 	}
 
-	ul, ol {
+	ul,
+	ol {
 		list-style: none;
 		margin-bottom: 0;
 	}
@@ -77,6 +85,7 @@
 
 	.usd, .usa {
 		text-transform: uppercase;
+		cursor: pointer;
 
 		i {
 			color: rgba(255,255, 255, 0.4);
@@ -205,9 +214,13 @@
 
 .main-nav {
 	display: flex;
+	list-style: none;
+	margin-bottom: 0;
+	padding: 0;
 
 	li {
 		position: relative;
+		padding: 0;
 
 		a {
 			padding-left: 15px;
@@ -357,8 +370,57 @@
 	color: $primary-color;
 	padding: 10px;
 	line-height: 1;
+    margin-right: -10px;
 }
 
 // ------------------------------------------
 // FIRST SCREEN
 // ------------------------------------------
+.first-screen {
+	margin-bottom: 80px;
+}
+
+// ------------------------------------------
+// PRODUCTS
+// ------------------------------------------
+
+.products {
+	margin-bottom: 40px;
+}
+
+.head-section {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 40px;
+
+	.title {
+		margin-right: 20px;
+	}
+}
+
+.tabs-menu {
+	li {
+
+		a {
+			color: rgba(16, 16, 16, 0.7);
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+
+		&.active {
+			a {
+				font-weight: 500;
+			}
+		}
+
+		&:hover,
+		&.active {
+			
+			a {
+				color:rgba(16, 16, 16, 0.9);
+			}
+		}
+	}
+}
+

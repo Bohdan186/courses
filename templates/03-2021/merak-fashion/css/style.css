@@ -4975,23 +4975,37 @@ button {
 }
 .search input[type=text] {
   padding-left: 40px;
+  padding-right: 163px;
   color: rgba(16, 16, 16, 0.5);
   font-weight: 500;
 }
 .search input[type=text]::placeholder {
   color: rgba(16, 16, 16, 0.5);
 }
-.search select {
+.search .select-category {
   position: absolute;
-  right: 20px;
+  right: 0;
   top: 0px;
   bottom: 0px;
   padding: 0;
   width: 144px;
-  padding-left: 20px;
   color: rgba(16, 16, 16, 0.8);
   text-transform: capitalize;
   border-right: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.search .select-category::before {
+  content: "";
+  width: 1px;
+  height: 10px;
+  background-color: rgba(16, 16, 16, 0.05);
+  margin-right: 20px;
+}
+.search .select-category i {
+  width: 20px;
+  text-align: center;
 }
 
 .primary-color {

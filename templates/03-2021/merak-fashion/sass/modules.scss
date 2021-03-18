@@ -37,7 +37,7 @@
 	font-weight: 600;
 	color: rgba(16, 16, 16, 0.8);
 	font-size: 14px;
-	display: flex;
+	display: inline-flex;
 	align-items: center;
 
 	&:hover {
@@ -70,6 +70,7 @@
 
 		&:hover {
 			background-color: darken($color: $primary-color, $amount: 20%);
+			color: #fff;
 		}
 	}
 	&.btn-dark-color {
@@ -94,87 +95,6 @@
 	}
 
 	//**** TYPE BUTTON ****//
-	
-	&.btn-square {
-		justify-content: center;
-		align-items: center;
-		padding: 0;
-		width: 30px;
-		height: 30px;
-		background-color: #fff;
-
-		&:hover {
-			background-color: darken($color: #fff, $amount: 20%);
-		}
-
-		i {
-			font-size: 20px;
-		}
-
-		//**** SQUARE BG COLOR ****//
-
-		&.btn-square-bgc-1 {
-			background-color: #A3B2A4;
-
-			&:hover {
-				background-color: darken($color: #A3B2A4, $amount: 20%);
-			}
-		}
-		&.btn-square-bgc-2 {
-			background-color: #D6575E;
-
-			&:hover {
-				background-color: darken($color: #D6575E, $amount: 20%);
-			}
-		}
-		&.btn-square-bgc-3 {
-			background-color: #2A767A;
-
-			&:hover {
-				background-color: darken($color: #2A767A, $amount: 20%);
-			}
-		}
-		&.btn-square-bgc-4 {
-			background-color: #FFC7C7;
-
-			&:hover {
-				background-color: darken($color: #FFC7C7, $amount: 20%);
-			}
-		}
-		&.btn-square-bgc-5 {
-			background-color: #164F58;
-
-			&:hover {
-				background-color: darken($color: #164F58, $amount: 20%);
-			}
-		}
-		&.btn-square-bgc-6 {
-			background-color: #ECC3DB;
-
-			&:hover {
-				background-color: darken($color: #ECC3DB, $amount: 20%);
-			}
-		}
-		
-		&.btn-square-bgc-7 {
-			background-color: #EEEEEE;
-
-			&:hover {
-				background-color: darken($color: #EEEEEE, $amount: 20%);
-			}
-		}
-
-		//**** SQUARE SIZE ****//
-
-		&.btn-small {
-			width: 15px;
-			height: 15px;
-		}
-		&.btn-large {
-			width: 40px;
-			height: 40px;
-		}
-	}
 
 	&.btn-bordered {
 		border: 1px solid rgba(16, 16, 16, 0.05);
@@ -182,11 +102,102 @@
 
 }
 
+.swatch {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30px;
+	height: 30px;
+	background-color: #fff;
+    color: rgba(16, 16, 16, 0.8);
+	
+
+	&:hover {
+		background-color: darken($color: #fff, $amount: 20%);
+	}
+
+	i {
+		font-size: 20px;
+	}
+
+	//**** SQUARE BG COLOR ****//
+
+	&.swatch-bgc-1 {
+		background-color: #A3B2A4;
+
+		&:hover {
+			background-color: darken($color: #A3B2A4, $amount: 20%);
+		}
+	}
+	&.swatch-bgc-2 {
+		background-color: #D6575E;
+
+		&:hover {
+			background-color: darken($color: #D6575E, $amount: 20%);
+		}
+	}
+	&.swatch-bgc-3 {
+		background-color: #2A767A;
+
+		&:hover {
+			background-color: darken($color: #2A767A, $amount: 20%);
+		}
+	}
+	&.swatch-bgc-4 {
+		background-color: #FFC7C7;
+
+		&:hover {
+			background-color: darken($color: #FFC7C7, $amount: 20%);
+		}
+	}
+	&.swatch-bgc-5 {
+		background-color: #164F58;
+
+		&:hover {
+			background-color: darken($color: #164F58, $amount: 20%);
+		}
+	}
+	&.swatch-bgc-6 {
+		background-color: #ECC3DB;
+
+		&:hover {
+			background-color: darken($color: #ECC3DB, $amount: 20%);
+		}
+	}
+	
+	&.swatch-bgc-7 {
+		background-color: #EEEEEE;
+
+		&:hover {
+			background-color: darken($color: #EEEEEE, $amount: 20%);
+		}
+	}
+
+	//**** SQUARE SIZE ****//
+
+	&.swatch-small {
+		width: 15px;
+		height: 15px;
+	}
+	&.swatch-large {
+		width: 40px;
+		height: 40px;
+	}
+}
+
 // ------------------------------------------
 // PRODUCTS
 // ------------------------------------------
 
 .product {
+
+	&:hover {
+
+		.inner {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
 
 	.btn-wrapper, 
 	.btn-inner {
@@ -200,15 +211,6 @@
 
 		img {
 			width: 100%;
-		}
-		
-
-		&:hover {
-
-			.inner {
-				opacity: 1;
-				visibility: visible;
-			}
 		}
 	}
 
@@ -246,8 +248,9 @@
 
 		.btn-wrapper {
 			justify-content: center;
-
-			.button {
+			flex-grow: 1;
+			
+			a {
 				z-index: 1;
 
 				&:not(:last-child) {
@@ -324,14 +327,14 @@
 	
 	.content-wrapper {
 		@include absolute;
-		padding: 40px;
+		// padding: 40px;
 		display: flex;
 		align-items: center;
 	}
 
 	.content {
 		max-width: 280px;
-		padding: 20px 0;
+		padding: 40px;
 
 		a {
 			z-index: 1;
@@ -349,7 +352,7 @@
 			display: flex;
 			align-items: center;
 
-			.button {
+			a {
 
 				&:not(:last-child) {
 					
@@ -414,13 +417,14 @@
 		right: 0;
 		top: 0px;
 		bottom: 0px;
+		display: flex;
+		align-items: center;
 		padding: 0;
 		width: 144px;
 		color: rgba(16, 16, 16, 0.8);
 		text-transform: capitalize;
+		font-weight: 500;
 		border-right: none;
-		display: flex;
-		align-items: center;
 		cursor: pointer;
 
 		&::before {

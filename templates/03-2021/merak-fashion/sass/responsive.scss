@@ -2,6 +2,27 @@
 // RESPONSIVE
 // ------------------------------------------------------------------------------------------------
 
+@media (max-width: 1200px) {
+	.product {
+
+		.inner	{
+			.content {
+
+				.btn-xx-small {
+					font-size: 0;
+					padding: 0 15px;
+					i {
+						margin-left: 0;
+						font-size: 20px;
+						opacity: 1;
+						visibility: visible;
+					}
+				}
+			}
+		}
+	}
+}
+
 @media (max-width: 991px) {
 	.header-bottom, .search-wrapper, .header-actions {
 		display: none;
@@ -22,6 +43,9 @@
 	}
 	.tabs-menu {
 		display: none;
+	}
+	.slider-wrapper {
+		margin-left: 0;
 	}
 }
 
@@ -68,19 +92,12 @@
 		.content-wrapper {
 			padding: 20px;
 		}
-
-		&.banner-large {
-
-			.content {
-				max-width: 357px;
-			}
-		}
 	}
 
 	.button {
 		padding: 12px 28px;
 
-		&.btn-square {
+		&.swatch {
 			width: 26px;
 			height: 26px;
 		}
@@ -88,6 +105,10 @@
 
 	.first-screen {
 		margin-bottom: 40px;
+	}
+
+	.slider-nav {
+		bottom: 0;
 	}
 }
 
@@ -138,7 +159,7 @@
 		padding: 10px 26px;
 		font-size: 12px;
 
-		&.btn-square {
+		&.swatch {
 			width: 24px;
 			height: 24px;
 		}

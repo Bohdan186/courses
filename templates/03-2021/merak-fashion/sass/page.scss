@@ -23,15 +23,17 @@
 }
 
 .spacing-bottom-30 {
-
+	
 	> [class*="col-"] {
 		margin-bottom: 30px;
 	}	
+	
+	.spacing-bottom-0 {
+		margin-bottom: 0;
+	}
 }
 
-.spacing-bottom-0 {
-	margin-bottom: 0;
-}
+
 
 // ------------------------------------------------------------------------------------------------
 // PRIMARY PAGE STYLE
@@ -62,15 +64,15 @@
 		}
 	}
 
-	ul,
-	ol {
+	ul {
 		list-style: none;
-		margin-bottom: 0;
 	}
 	
 	ul,
+	ol,
 	li {
-		padding: 0;
+		margin-bottom: 0;
+		padding-left: 0;
 	}
 }
 
@@ -477,6 +479,7 @@
 
 	.title {
 		margin-right: 20px;
+		margin-bottom: 0;
 	}
 }
 
@@ -485,15 +488,35 @@
     margin-bottom: 0;
     padding-left: 0;
 
+	display: flex;
+
 
 	li {
-
-		padding: 0;
+		position: relative;
+		margin-bottom: 0;
 
 		a {
+			
+			position: relative;
 			color: rgba(16, 16, 16, 0.7);
 			padding-left: 20px;
 			padding-right: 20px;
+
+			span {
+
+				&::after {
+					content: "";
+					position: absolute;
+					bottom: 0;
+					left: 18px;
+					right: 18px;
+					height: 3px;
+					background-color: $primary-color;
+					opacity: 0;
+					visibility: hidden;
+					transition: $transition;
+				}
+			}
 		}
 
 		&.active {
@@ -507,6 +530,13 @@
 			
 			a {
 				color:rgba(16, 16, 16, 0.9);
+
+				span {
+					&::after {
+						opacity: 1;
+						visibility: visible;
+					}
+				}
 			}
 		}
 	}
@@ -521,6 +551,13 @@
 	padding-top: 60px;
 	padding-bottom: 60px;
 	margin-bottom: 80px;
+
+	.title {
+
+		h2 {
+			margin-bottom: 20px;
+		}
+	}
 }
 
 .banner-slider-nav {
@@ -549,22 +586,30 @@
 	}
 }
 
-//
+// ------------------------------------------
+// PROMOTIONS
+// ------------------------------------------
+
 .promotions {
-	.container{
-		> .title {
+		
+	.banner {
 
-			text-align: center;
-			max-width: 100%;
-			margin-bottom: 30px;
+		.title {
+			margin-bottom: 0;
 
-			p {
-				max-width: 380px;
-				margin-left: auto;
-				margin-right: auto;
+			.subtitle {
+				font-size: 12px;
 			}
 		}
-	}
-		
-		
+	}	
+}
+
+// ------------------------------------------
+// REVIEWS
+// ------------------------------------------
+
+.reviews {
+	background-color: $second-color;
+	padding-top: 60px;
+	padding-bottom: 50px;
 }

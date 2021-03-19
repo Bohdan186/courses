@@ -3,27 +3,26 @@
 // ------------------------------------------------------------------------------------------------
 
 @media (min-width: 1200px) {
-	.promotions-col-lg {
+	.custom-col-20 {
 		position: relative;
-		width: 100%;
+		flex: 0 0 20%;
 		padding-right: 15px;
 		padding-left: 15px;
 		max-width: 20%;
-	}
 
-	.product {
+		.button {
 
-		.inner	{
-			.content {
-
-				.btn-xx-small {
-					font-size: 0;
-					padding: 0 15px;
+			&.adapts {
+				font-size: 0;
+				padding: 0 15px;
+				
+				.hidden-i {
+					opacity: 1;
+					visibility: visible;
+					margin-left: 0;
+	
 					i {
-						margin-left: 0;
 						font-size: 20px;
-						opacity: 1;
-						visibility: visible;
 					}
 				}
 			}
@@ -32,6 +31,24 @@
 }
 
 @media (max-width: 1200px) {
+	.button {
+
+		&.adapts {
+			font-size: 0;
+			padding: 0 15px;
+			
+			.hidden-i {
+				opacity: 1;
+				visibility: visible;
+				margin-left: 0;
+
+				i {
+					font-size: 20px;
+				}
+			}
+		}
+	}
+
 	.product {
 
 		.inner	{

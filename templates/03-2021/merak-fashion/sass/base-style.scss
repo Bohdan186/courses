@@ -144,8 +144,11 @@ ol {
 }
 
 li {
-    padding-top: 5px;
-    padding-bottom: 5px;	
+	margin-bottom: 10px;
+	
+	&:last-child {
+		margin-bottom: 0;
+	}
 }
 
 
@@ -189,6 +192,10 @@ textarea{
 	outline: none;
 }
 
+textarea{
+	padding: 20px;
+}
+
 input[type=email],
 input[type=number],
 input[type=password],
@@ -203,12 +210,27 @@ select{
 	padding-right: 20px;
 }
 
+
 input[type=button],
 input[type=submit],
-button {
-	border: none;
+button,
+.button {
+	padding: 15px 35px;
+	background-color: #fff;
+	font-weight: 600;
+	color: rgba(16, 16, 16, 0.8);
+	font-size: 14px;
+	display: inline-flex;
+	align-items: center;
 	cursor: pointer;
-	padding: 10px 20px ;
+	border: none;
+	outline: none;
+	transition: $transition;
+
+	
+	&:hover {
+		background-color: darken($color: #fff, $amount: 20%);
+	}
 }
 
 // ------------------------------------------

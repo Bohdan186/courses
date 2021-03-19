@@ -2,6 +2,35 @@
 // RESPONSIVE
 // ------------------------------------------------------------------------------------------------
 
+@media (min-width: 1200px) {
+	.promotions-col-lg {
+		position: relative;
+		width: 100%;
+		padding-right: 15px;
+		padding-left: 15px;
+		max-width: 20%;
+	}
+
+	.product {
+
+		.inner	{
+			.content {
+
+				.btn-xx-small {
+					font-size: 0;
+					padding: 0 15px;
+					i {
+						margin-left: 0;
+						font-size: 20px;
+						opacity: 1;
+						visibility: visible;
+					}
+				}
+			}
+		}
+	}
+}
+
 @media (max-width: 1200px) {
 	.product {
 

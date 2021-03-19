@@ -4829,9 +4829,6 @@ button {
 .title {
   max-width: 380px;
 }
-.title h1, .title h2, .title h3, .title h4, .title h5, .title h6 {
-  margin-bottom: 0;
-}
 .title .subtitle {
   font-family: "Hind", sans-serif;
   font-size: 13px;
@@ -5156,6 +5153,10 @@ button {
   right: 0;
 }
 
+.spacing-row-bottom-50 {
+  margin-bottom: 50px;
+}
+
 .spacing-bottom-40 > [class*=col-] {
   margin-bottom: 40px;
 }
@@ -5163,7 +5164,8 @@ button {
 .spacing-bottom-30 > [class*=col-] {
   margin-bottom: 30px;
 }
-.spacing-bottom-30 .spacing-bottom-0 {
+
+.spacing-bottom-0 {
   margin-bottom: 0;
 }
 
@@ -5490,6 +5492,14 @@ button {
   margin-right: 20px;
 }
 
+.tabs-menu {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.tabs-menu li {
+  padding: 0;
+}
 .tabs-menu li a {
   color: rgba(16, 16, 16, 0.7);
   padding-left: 20px;
@@ -5532,6 +5542,37 @@ button {
   color: #333333;
 }
 
+.promotions .container > .title {
+  text-align: center;
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+.promotions .container > .title p {
+  max-width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 1200px) {
+  .promotions-col-lg {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    max-width: 20%;
+  }
+
+  .product .inner .content .btn-xx-small {
+    font-size: 0;
+    padding: 0 15px;
+  }
+  .product .inner .content .btn-xx-small i {
+    margin-left: 0;
+    font-size: 20px;
+    opacity: 1;
+    visibility: visible;
+  }
+}
 @media (max-width: 1200px) {
   .product .inner .content .btn-xx-small {
     font-size: 0;

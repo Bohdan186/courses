@@ -4660,10 +4660,15 @@ html {
 /*# sourceMappingURL=bootstrap-grid.css.map */
 body {
   font-family: "Cabin", sans-serif;
+  background-color: #F7F7F7;
   color: rgba(16, 16, 16, 0.9);
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.4;
+  line-height: 1.2;
+}
+
+.container {
+  max-width: 1300px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -5019,6 +5024,33 @@ button:hover,
   transition: all 0.4s ease;
 }
 
+.team-members {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+.team-members .img-wrapper {
+  margin-right: 10px;
+}
+.team-members .name {
+  font-weight: 500;
+  font-size: 24px;
+}
+.team-members .profession {
+  color: rgba(16, 16, 16, 0.5);
+}
+.team-members.team-members-small .content-wrapper {
+  display: flex;
+  align-items: center;
+}
+.team-members.team-members-small .name {
+  font-weight: 400;
+  font-size: 16px;
+}
+.team-members.team-members-small .profession {
+  margin-left: 5px;
+}
+
 .absolute {
   position: absolute;
   top: 0;
@@ -5040,6 +5072,14 @@ button:hover,
   width: 100%;
 }
 
+.spacing-hor-10 > [class*=col-] {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.main-header {
+  background-color: #fff;
+}
 .main-header .header-row-inner {
   display: flex;
   align-items: center;
@@ -5108,10 +5148,54 @@ button:hover,
   font-size: 20px;
 }
 
+.slider {
+  padding-top: 100px;
+  margin-bottom: 146px;
+}
+.slider .title {
+  margin-bottom: 40px;
+}
+.slider .title h2 {
+  text-transform: capitalize;
+}
+.slider p {
+  margin-bottom: 40px;
+  line-height: 1.3;
+}
+.slider .btn-wrapper .button:first-child {
+  margin-right: 19px;
+}
+.slider .team-members {
+  margin-bottom: 20px;
+}
+
+.photo-collections {
+  margin-bottom: 120px;
+}
+.photo-collections .title {
+  margin-bottom: 40px;
+}
+.photo-collections .title h3 {
+  margin-bottom: 18px;
+}
+.photo-collections .title p {
+  max-width: 420px;
+}
+
+@media (max-width: 1200px) {
+  .spacing-xl-vert-20 > [class*=col-] {
+    margin-bottom: 20px;
+  }
+}
 @media (max-width: 992px) {
   .header-col-left {
     padding-right: 15px;
     flex-grow: 1;
+  }
+
+  .slider {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 @media (max-width: 768px) {

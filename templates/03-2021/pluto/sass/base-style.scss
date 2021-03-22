@@ -1,12 +1,14 @@
-$primary-color: #DA8A67;
+$primary-color: #36B1F5;
 $transition: all .4s ease;
 
+// font-family: 'Cabin', sans-serif;
+// font-family: 'Red Hat Display', sans-serif;
 
 body {
-	font-family: 'Hind', sans-serif;
-	color: rgba(184, 140, 140, 0.5);
+	font-family: 'Cabin', sans-serif;
+	color: rgba(16, 16, 16, 0.9);
 	font-weight: 400;
-	font-size: 16px;
+	font-size: 15px;
 	line-height: 1.4;
 }
 
@@ -16,35 +18,32 @@ body {
 // ------------------------------------------
 
 h1,h2,h3,h4,h5,h6 {
-	font-family: "Spartan", sans-serif;
 	margin-bottom: 30px;
-	color: rgba(16, 16, 16, 0.9);
-	font-weight: 500;
+	font-weight: 700;
 }
 
 h1 {
-	font-size: 42px;
+	font-size: 100px;
 }
 
 h2 {
-	font-size: 32px;
+	font-size: 70px;
 }
 
 h3 {
-	font-size: 25px;
+	font-size: 36px;
 }
 
 h4 {
-	font-size: 20px;
+	font-size: 30px;
 }
 
 h5 {
-	font-size: 18px;
+	font-size: 24px;
 }
 
 h6 {
-	font-size: 13px;
-	color: #101010;
+	font-size: 18px;
 }
 
 
@@ -81,13 +80,12 @@ u {
 // ------------------------------------------
 
 a {
-	display: inline-block;
 	color: $primary-color;
 	text-decoration: underline;
 	transition: $transition;
 	
 	&:hover {
-		color: darken($color: #DA8A67, $amount: 20%);
+		color: darken($color: $primary-color, $amount: 20%);
 	}
 
 	&.button {
@@ -113,7 +111,7 @@ img {
 // ------------------------------------------
 
 table {
-	border: 1px solid rgba(16, 16, 16, 0.5);
+	border: 1px solid rgba(16, 16, 16, 0.1);
 	width: 100%;
 }
 
@@ -123,7 +121,7 @@ th {
 
 th, td {
 	padding: 5px 15px;	
-	border-right: 1px solid rgba(16, 16, 16, 0.5);
+	border-right: 1px solid rgba(16, 16, 16, 0.1);
 
 	&:last-child {
 		border-right: 0;
@@ -168,9 +166,9 @@ select,
 textarea{
 	display: flex;
 	width: 100%;
-	border: 0;
+	border: 2px solid rgba(16, 16, 16, 0.1);
+	border-radius: 5px;
 	outline: none;
-	border-bottom: 1px solid rgba(16, 16, 16, 0.5);
 	
 }
 
@@ -197,7 +195,6 @@ label {
 
 textarea {
 	padding: 20px;
-	border: 1px solid rgba(16, 16, 16, 0.5);
 }
 
 // ------------------------------------------
@@ -209,15 +206,17 @@ input[type=submit],
 button,
 .button {
 	display: inline-block;
-	padding: 15px 20px;
+	padding: 13px 20px;
 	border: none;
+	border-radius: 5px;
 	outline: none;
 	text-align: center;
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: 600;
 	background-color: $primary-color;
 	color: #fff;
 	text-decoration: none;
+	text-transform: capitalize;
 	transition: $transition;
 
 	&:hover {
@@ -231,8 +230,9 @@ button,
 // ------------------------------------------
 
 .color-scheme-light {
+	color: #FFF;
 
-	h1,h2,h3,h4,h5,h6,i,span, div {
+	h1,h2,h3,h4,h5,h6,i,span {
 		color: #FFF;
 	}
 

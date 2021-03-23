@@ -32,13 +32,28 @@
 	}
 }
 
-.spacing-hor-10 {
+.spacing-col-10 {
+	padding-left: 20px;
+	padding-right: 20px;
+
+	.row {
+		
+		margin-left: -10px;
+		margin-right: -10px;
+
+		> [class*="col-"] {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+}
+
+.spacing-col-bottom-40 {
 
 	> [class*="col-"] {
-		padding-left: 10px;
-		padding-right: 10px;
+		margin-bottom: 40px;
 	}
-}	
+}
 
 // ------------------------------------------------------------------------------------------------
 // PAGES STYLE
@@ -155,7 +170,7 @@
 		}
 	}
 
-	.team-members {
+	.author-title {
 		margin-bottom: 20px;
 	}
 }
@@ -178,4 +193,87 @@
 			max-width: 420px;
 		}
 	}
+}
+
+// ------------------------------------------
+// MY CLIENTS
+// ------------------------------------------
+
+.my-clients {
+	padding-bottom: 70px;
+	margin-bottom: 40px;
+	border-bottom: 1px solid rgba(16, 16, 16, 0.1);
+
+	.title {
+		margin-bottom: 20px;
+
+		p {
+			max-width: 420px;
+		}
+	}
+
+	.my-clients-text {
+
+		h5 {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.contact-me-wrapper {
+    display: flex;
+    align-items: center;
+
+	.button,
+	.social-links {
+		margin-right: 20px;
+	}
+}
+
+.email {
+	font-family: 'Red Hat Display', sans-serif;
+	color: rgba(16, 16, 16, 0.4);
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+// ------------------------------------------
+// BRANDS
+// ------------------------------------------
+
+.brands {
+	margin-bottom: 80px;
+}
+
+.brands-list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+
+	li {
+		margin-bottom: 0;
+
+		&:hover {
+			
+			img {
+				filter: grayscale(0);
+				opacity: 1;
+			}
+		}
+	}
+
+	a {
+		position: relative;
+		display: flex;
+	}
+
+	img {
+		filter: grayscale(1);
+		opacity: .3;
+		transition: $transition;
+	}
+
 }

@@ -3,7 +3,7 @@
 // ------------------------------------------------------------------------------------------------
 
 @media (max-width: 1200px) {
-	.spacing-xl-vert-20 {
+	.spacing-xl-bottom-20 {
 
 		> [class*="col-"] {
 			margin-bottom: 20px;
@@ -20,6 +20,11 @@
 	.slider {
 		padding-top: 50px;
 		padding-bottom: 50px;
+		margin-bottom: 50px;
+	}
+
+	.photo-collections {
+		margin-bottom: 50px;
 	}
 }
 
@@ -61,5 +66,25 @@
 	.faq,
 	.header-col-center {
 		display: none;
+	}
+
+	.spacing-col-bottom-40 {
+
+		> [class*="col-"] {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.contact-me-wrapper {
+			
+		.button, .social-links {
+			margin-right: 12px;
+		}
+
+		.email {
+			display: none;
+		}
 	}
 }

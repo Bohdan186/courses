@@ -5024,31 +5024,80 @@ button:hover,
   transition: all 0.4s ease;
 }
 
-.team-members {
+.author-title {
   display: flex;
   align-items: center;
   font-size: 18px;
 }
-.team-members .img-wrapper {
+.author-title .img-wrapper {
   margin-right: 10px;
 }
-.team-members .name {
+.author-title .name {
   font-weight: 500;
   font-size: 24px;
 }
-.team-members .profession {
+.author-title .profession {
   color: rgba(16, 16, 16, 0.5);
 }
-.team-members.team-members-small .content-wrapper {
+.author-title.author-title-small .content-wrapper {
   display: flex;
   align-items: center;
 }
-.team-members.team-members-small .name {
+.author-title.author-title-small .name {
   font-weight: 400;
   font-size: 16px;
 }
-.team-members.team-members-small .profession {
+.author-title.author-title-small .profession {
   margin-left: 5px;
+}
+
+.social-links {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.social-links li {
+  margin-bottom: 20px;
+}
+.social-links li:last-child {
+  margin-bottom: 0;
+}
+.social-links a {
+  font-family: "Red Hat Display", sans-serif;
+  color: rgba(16, 16, 16, 0.5);
+}
+.social-links i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-links i:not(:last-child) {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+.social-links.social-links-row {
+  display: flex;
+  align-items: center;
+}
+.social-links.social-links-row li {
+  margin-bottom: 0;
+}
+.social-links.social-links-row li:not(:last-child) {
+  margin-right: 15px;
+}
+.social-links.social-links-row li:hover a {
+  color: #36B1F5;
+}
+.social-links.social-links-row a {
+  display: flex;
+  align-items: center;
+  color: rgba(16, 16, 16, 0.7);
+}
+.social-links.social-links-row i:not(:last-child) {
+  width: 15px;
+  height: 15px;
+  margin-right: 15px;
 }
 
 .absolute {
@@ -5072,9 +5121,21 @@ button:hover,
   width: 100%;
 }
 
-.spacing-hor-10 > [class*=col-] {
+.spacing-col-10 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.spacing-col-10 .row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.spacing-col-10 .row > [class*=col-] {
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.spacing-col-bottom-40 > [class*=col-] {
+  margin-bottom: 40px;
 }
 
 .main-header {
@@ -5165,7 +5226,7 @@ button:hover,
 .slider .btn-wrapper .button:first-child {
   margin-right: 19px;
 }
-.slider .team-members {
+.slider .author-title {
   margin-bottom: 20px;
 }
 
@@ -5182,8 +5243,68 @@ button:hover,
   max-width: 420px;
 }
 
+.my-clients {
+  padding-bottom: 70px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid rgba(16, 16, 16, 0.1);
+}
+.my-clients .title {
+  margin-bottom: 20px;
+}
+.my-clients .title p {
+  max-width: 420px;
+}
+.my-clients .my-clients-text h5 {
+  margin-bottom: 20px;
+}
+
+.contact-me-wrapper {
+  display: flex;
+  align-items: center;
+}
+.contact-me-wrapper .button,
+.contact-me-wrapper .social-links {
+  margin-right: 20px;
+}
+
+.email {
+  font-family: "Red Hat Display", sans-serif;
+  color: rgba(16, 16, 16, 0.4);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.brands {
+  margin-bottom: 80px;
+}
+
+.brands-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.brands-list li {
+  margin-bottom: 0;
+}
+.brands-list li:hover img {
+  filter: grayscale(0);
+  opacity: 1;
+}
+.brands-list a {
+  position: relative;
+  display: flex;
+}
+.brands-list img {
+  filter: grayscale(1);
+  opacity: 0.3;
+  transition: all 0.4s ease;
+}
+
 @media (max-width: 1200px) {
-  .spacing-xl-vert-20 > [class*=col-] {
+  .spacing-xl-bottom-20 > [class*=col-] {
     margin-bottom: 20px;
   }
 }
@@ -5196,6 +5317,11 @@ button:hover,
   .slider {
     padding-top: 50px;
     padding-bottom: 50px;
+    margin-bottom: 50px;
+  }
+
+  .photo-collections {
+    margin-bottom: 50px;
   }
 }
 @media (max-width: 768px) {
@@ -5226,6 +5352,18 @@ button:hover,
   .language,
 .faq,
 .header-col-center {
+    display: none;
+  }
+
+  .spacing-col-bottom-40 > [class*=col-] {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .contact-me-wrapper .button, .contact-me-wrapper .social-links {
+    margin-right: 12px;
+  }
+  .contact-me-wrapper .email {
     display: none;
   }
 }

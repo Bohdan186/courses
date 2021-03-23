@@ -29,6 +29,10 @@
 		}
 	}
 
+	p {
+		max-width: 420px;
+	}
+
 	.subtitle {
 		font-weight: 400;
 		font-size: 18px;
@@ -297,9 +301,16 @@
 		&:last-child {
 			margin-bottom: 0;
 		}
+
+		&:hover {
+			a {
+				color: $primary-color;
+			}
+		}
 	}
 
 	a {
+		display: block;
 		font-family: 'Red Hat Display', sans-serif;
 		color: rgba(16, 16, 16, 0.5);
 	}
@@ -326,12 +337,6 @@
 
 			&:not(:last-child) {
 				margin-right: 15px;
-			}
-
-			&:hover {
-				a {
-					color: $primary-color;
-				}
 			}
 		}
 

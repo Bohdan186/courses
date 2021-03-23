@@ -32,7 +32,7 @@
 	}
 }
 
-.spacing-col-10 {
+.spacing-row-col-10 {
 	padding-left: 20px;
 	padding-right: 20px;
 
@@ -46,6 +46,27 @@
 			padding-right: 10px;
 		}
 	}
+}
+
+.spacing-col-10 {
+		
+	margin-left: -10px;
+	margin-right: -10px;
+	margin-bottom: 40px;
+
+	> [class*="col-"] {
+		padding-left: 10px;
+		padding-right: 10px;
+		
+		.banner {
+			margin-bottom: 20px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
 }
 
 .spacing-col-bottom-40 {
@@ -188,10 +209,6 @@
 		h3 {
 			margin-bottom: 18px;
 		}
-
-		p {
-			max-width: 420px;
-		}
 	}
 }
 
@@ -206,10 +223,6 @@
 
 	.title {
 		margin-bottom: 20px;
-
-		p {
-			max-width: 420px;
-		}
 	}
 
 	.my-clients-text {
@@ -276,4 +289,77 @@
 		transition: $transition;
 	}
 
+}
+
+// ------------------------------------------
+// RECENT WORK
+// ------------------------------------------
+
+.recent-works {
+	margin-bottom: 120px;
+
+	.title {
+		margin-bottom: 40px;
+	}
+
+	.btn-wrapper {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+// ------------------------------------------
+// MY BLOG
+// ------------------------------------------
+
+.my-blog {
+	margin-bottom: 120px;
+
+	.title {
+		margin-bottom: 40px;
+	}
+}
+
+// ------------------------------------------
+// FOOTER
+// ------------------------------------------
+
+.footer {
+	padding-top: 40px;
+	// padding-bottom: 40px;
+	// border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+	background-color: #fff;
+
+	.title {
+		margin-bottom: 20px;
+	}
+
+	form {
+		display: flex;
+		align-items: center;
+	}
+
+	input[type=email] {
+		margin-right: 6px;
+	}
+
+	.bottom-footer {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.logo-footer {
+			padding-right: 15px;
+			flex-grow: 1;
+		}
+
+		p {
+			padding-left: 15px;
+			flex-grow: 1;
+		}
+	}
+	
+	
 }

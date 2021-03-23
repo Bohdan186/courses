@@ -26,6 +26,13 @@
 	.photo-collections {
 		margin-bottom: 50px;
 	}
+
+	.spacing-lg-bottom-20 {
+
+		> [class*="col-"] {
+			margin-bottom: 20px;
+		}
+	}
 }
 
 @media (max-width: 768px) {
@@ -35,7 +42,6 @@
 
 	h1,h2,h3,h4,h5,h6 {
 		margin-bottom: 20px;
-		font-weight: 700;
 	}
 
 	h1 {

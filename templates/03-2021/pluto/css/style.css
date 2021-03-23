@@ -4790,7 +4790,7 @@ textarea {
   display: flex;
   width: 100%;
   background-color: #fff;
-  border: 2px solid rgba(16, 16, 16, 0.1);
+  border: 1px solid rgba(16, 16, 16, 0.1);
   border-radius: 5px;
   outline: none;
 }
@@ -4804,7 +4804,7 @@ input[type=url],
 input[type=date],
 input[type=time],
 select {
-  height: 40px;
+  height: 42px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -4824,7 +4824,7 @@ input[type=submit],
 button,
 .button {
   display: inline-block;
-  padding: 13px 20px;
+  padding: 12px 20px;
   border: none;
   border-radius: 5px;
   outline: none;
@@ -4875,6 +4875,9 @@ button:hover,
 }
 .title h1:last-child, .title h2:last-child, .title h3:last-child, .title h4:last-child, .title h5:last-child, .title h6:last-child, .title p:last-child {
   margin-bottom: 0;
+}
+.title p {
+  max-width: 420px;
 }
 .title .subtitle {
   font-weight: 400;
@@ -5062,7 +5065,11 @@ button:hover,
 .social-links li:last-child {
   margin-bottom: 0;
 }
+.social-links li:hover a {
+  color: #36B1F5;
+}
 .social-links a {
+  display: block;
   font-family: "Red Hat Display", sans-serif;
   color: rgba(16, 16, 16, 0.5);
 }
@@ -5085,9 +5092,6 @@ button:hover,
 }
 .social-links.social-links-row li:not(:last-child) {
   margin-right: 15px;
-}
-.social-links.social-links-row li:hover a {
-  color: #36B1F5;
 }
 .social-links.social-links-row a {
   display: flex;
@@ -5121,17 +5125,33 @@ button:hover,
   width: 100%;
 }
 
-.spacing-col-10 {
+.spacing-row-col-10 {
   padding-left: 20px;
   padding-right: 20px;
 }
-.spacing-col-10 .row {
+.spacing-row-col-10 .row {
   margin-left: -10px;
   margin-right: -10px;
 }
-.spacing-col-10 .row > [class*=col-] {
+.spacing-row-col-10 .row > [class*=col-] {
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.spacing-col-10 {
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: 40px;
+}
+.spacing-col-10 > [class*=col-] {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.spacing-col-10 > [class*=col-] .banner {
+  margin-bottom: 20px;
+}
+.spacing-col-10 > [class*=col-] .banner:last-child {
+  margin-bottom: 0;
 }
 
 .spacing-col-bottom-40 > [class*=col-] {
@@ -5239,9 +5259,6 @@ button:hover,
 .photo-collections .title h3 {
   margin-bottom: 18px;
 }
-.photo-collections .title p {
-  max-width: 420px;
-}
 
 .my-clients {
   padding-bottom: 70px;
@@ -5250,9 +5267,6 @@ button:hover,
 }
 .my-clients .title {
   margin-bottom: 20px;
-}
-.my-clients .title p {
-  max-width: 420px;
 }
 .my-clients .my-clients-text h5 {
   margin-bottom: 20px;
@@ -5303,6 +5317,54 @@ button:hover,
   transition: all 0.4s ease;
 }
 
+.recent-works {
+  margin-bottom: 120px;
+}
+.recent-works .title {
+  margin-bottom: 40px;
+}
+.recent-works .btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.my-blog {
+  margin-bottom: 120px;
+}
+.my-blog .title {
+  margin-bottom: 40px;
+}
+
+.footer {
+  padding-top: 40px;
+  background-color: #fff;
+}
+.footer .title {
+  margin-bottom: 20px;
+}
+.footer form {
+  display: flex;
+  align-items: center;
+}
+.footer input[type=email] {
+  margin-right: 6px;
+}
+.footer .bottom-footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .bottom-footer .logo-footer {
+  padding-right: 15px;
+  flex-grow: 1;
+}
+.footer .bottom-footer p {
+  padding-left: 15px;
+  flex-grow: 1;
+}
+
 @media (max-width: 1200px) {
   .spacing-xl-bottom-20 > [class*=col-] {
     margin-bottom: 20px;
@@ -5323,11 +5385,14 @@ button:hover,
   .photo-collections {
     margin-bottom: 50px;
   }
+
+  .spacing-lg-bottom-20 > [class*=col-] {
+    margin-bottom: 20px;
+  }
 }
 @media (max-width: 768px) {
   h1, h2, h3, h4, h5, h6 {
     margin-bottom: 20px;
-    font-weight: 700;
   }
 
   h1 {

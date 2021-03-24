@@ -7,7 +7,7 @@
 	<title>Pluto</title>
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Red+Hat+Display&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Red+Hat+Display:wght@500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">	<!-- style -->
 </head>
 <body>
@@ -17,19 +17,19 @@
 			<div class="header-row-inner">
 			  <div class="header-col header-col-left">
 				<div class="logo">
-					<a href="#">
+					<a href="index.html">
 						<img src="img/svg/pluto-logo.svg" alt="Pluto">
 					</a>
 				</div>
 			  </div>
 			  <div class="header-col header-col-center">
 				<ul class="primary-menu">
-					<li><a href="#">Home 
+					<li><a href="index.html">Home 
 						<span class="arrow-down">
 							<i class="fal fa-angle-down"></i>
 						</span>
 					</a></li>
-					<li><a href="#">Portfolio 
+					<li><a href="pages/blog.html">Portfolio 
 						<span class="arrow-down">
 							<i class="fal fa-angle-down"></i>
 						</span>
@@ -79,7 +79,7 @@
 					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large.</p>
 					<div class="btn-wrapper">
 						<a href="#" class="button text-small  btn-bg-color-1">About me</a>
-						<a href="#" class="button btn-bg-color-transparent">My Portfolio</a>
+						<a href="#" class="button btn-bg-color-transparent ">My Portfolio</a>
 					</div>
 				</div>
 				<div class="col-lg-6 order-1 order-lg-2">
@@ -97,8 +97,8 @@
 				  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live.</p>
 			  </div>
 		  </div>
-		  <div class="container-fluid spacing-row-col-10 ">
-			  <div class="row spacing-xl-bottom-20">
+		  <div class="container-fluid">
+			  <div class="row spacing-row-col-10 spacing-xl-bottom-20">
 				  <div class="col-md-4 col-xl-2">
 					<div class="banner hover-scale">
 						<div class="img-wrapper">
@@ -220,7 +220,7 @@
 			  </div>
 			  <div class="contact-me-wrapper">
 				<a href="#" class="button button-large btn-bg-color-1">Contact me</a>
-				<ul class="social-links social-links-row">
+				<ul class="social-links">
 					<li>
 						<a href="#">
 							<i class="fab fa-facebook-f"></i>
@@ -387,22 +387,34 @@
 				</div>
 				</div>
 				<div class="btn-wrapper">
-					<a href="#" class="button btn-bg-color-transparent">View my entire gallery</a>
+					<a href="#" class="button btn-bg-color-transparent line-color-2">View my entire gallery
+						<i class="far fa-arrow-right"></i>
+					</a>
 				</div>
 		  </div>
 	</section>
 	<section class="my-blog">
 		<div class="container">
-			<div class="title">
-				<h3>My Blog</h3>
-				<p>Far far away, behind the word mountains.</p>
+			<div class="section-title">
+				<div class="title">
+					<h3>My Blog</h3>
+					<p>Far far away, behind the word mountains.</p>
+				</div>
+				<div class="arrows">
+					<div class="arrow-wrapper">
+						<i class="fal fa-arrow-left"></i>
+					</div>
+					<div class="arrow-wrapper">
+						<i class="fal fa-arrow-right"></i>
+					</div>
+				</div>
 			</div>
 			<div class="row spacing-lg-bottom-20">
 				<div class="col-lg-4">
 					<div class="article-preview hover-scale">
 						<div class="img-wrapper">
 							<div class="img-inner">
-								<img src="img/p-blog-1.jpg" alt="">
+								<img src="img/p-blog-3.jpg" alt="">
 							</div>
 							<a href="#" class="absolute"></a>
 						</div>
@@ -476,7 +488,7 @@
 					<div class="article-preview hover-scale">
 						<div class="img-wrapper">
 							<div class="img-inner">
-								<img src="img/p-blog-3.jpg" alt="">
+								<img src="img/p-blog-1.jpg" alt="">
 							</div>
 							<a href="#" class="absolute"></a>
 						</div>
@@ -529,14 +541,14 @@
 					<div class="title">
 						<h6>Studio</h6>
 					</div>
-					<ul class="social-links">
+					<ul class="vertical-list">
 						<li>
 							<a href="#">
 								<span>Work</span>
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="pages/blog.html">
 								<span>Blog</span>
 							</a>
 						</li>
@@ -556,7 +568,7 @@
 					<div class="title">
 						<h6>Social links</h6>
 					</div>
-					<ul class="social-links">
+					<ul class="vertical-list with-icons">
 						<li>
 							<a href="#">
 								<i class="fab fa-facebook-f"></i>
@@ -603,5 +615,8 @@
 			</div>
 		</div>
 	</footer>
+	<div class="scroll-to-top">
+		<i class="fal fa-angle-up"></i>
+	</div>
 </body>
 </html>

@@ -44,6 +44,12 @@
 			margin-right: 20px;
 		}
 	}
+
+	&.title-small {
+		padding-top: 38px;
+		padding-bottom: 38px;
+		margin-bottom: 0;
+	}
 }
 
 .title {
@@ -205,6 +211,22 @@
 		}
 	}
 }
+
+.post-format {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 5px;
+	background-color: #fff;
+	font-size: 18px;
+	color: rgba(16, 16, 16, 0.8);
+	
+}
 // ------------------------------------------
 // BUTTONS
 // ------------------------------------------
@@ -332,6 +354,27 @@
 		.profession {
 			margin-left: 5px;
 		}
+	}
+
+	&.author-title-extra-small {
+
+		.img-wrapper {
+			width: 20px;
+			height: 20px;
+			margin-right: 3px;
+		}
+
+		.content-wrapper {
+			display: flex;
+			align-items: center;
+		}
+
+		.name {
+			font-family: 'Red Hat Display', sans-serif;
+			font-weight: 500;
+			font-size: 13px;
+		}
+
 	}
 }
 
@@ -465,6 +508,10 @@
 		&::after {
 			content: "/";
 			padding-left: 5px;
+		}
+
+		&:hover {
+			color: $primary-color;
 		}
 	}
 }

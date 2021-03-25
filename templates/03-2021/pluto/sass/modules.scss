@@ -53,7 +53,6 @@
 }
 
 .title {
-	margin-right: 10px;
 
 	h1,h2,h3,h4,h5,h6,p {
 		margin-bottom: 20px;
@@ -61,10 +60,6 @@
 		&:last-child {
 			margin-bottom: 0;
 		}
-	}
-
-	p {
-		max-width: 420px;
 	}
 
 	.subtitle {
@@ -80,7 +75,12 @@
 
 .banner {
 	position: relative;
-	margin-bottom: 20px;
+	@include hover-scale;
+	
+
+	&:not(:last-child) {
+		margin-bottom: 20px;
+	}
 
 	.img-wrapper {
 		border-radius: 5px;
@@ -114,6 +114,7 @@
 	position: relative;
 	box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
 	border-radius: 5px;
+	@include hover-scale;
 
 	.img-wrapper {
 		position: relative;
@@ -212,7 +213,7 @@
 	}
 }
 
-.post-format {
+.post-label {
 	position: absolute;
 	top: 20px;
 	left: 20px;
@@ -225,6 +226,11 @@
 	background-color: #fff;
 	font-size: 18px;
 	color: rgba(16, 16, 16, 0.8);
+
+	&.post-label-bg-transparent {
+		background-color: transparent;
+		color: rgba(16, 16, 16, 0.1);
+	}
 	
 }
 // ------------------------------------------
@@ -419,6 +425,13 @@
 			margin-right: 15px;
 		}
 	}
+
+	&.a-lighter {
+
+		a {
+			color:rgba(16, 16, 16, 0.5);
+		}
+	}
 }
 
 .vertical-list {
@@ -443,8 +456,8 @@
 
 	a {
 		display: block;
-		padding-top: 5px;
-		padding-bottom: 5px;
+		padding-top: 10px;
+		padding-bottom: 10px;
 		font-family: 'Red Hat Display', sans-serif;
 		color: rgba(16, 16, 16, 0.5);
 	}
@@ -514,4 +527,31 @@
 			color: $primary-color;
 		}
 	}
+}
+
+// ------------------------------------------
+// TAGS
+// ------------------------------------------
+
+.tags {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 11px 14px;
+	margin-right: 10px;
+	border-radius: 5px;
+	border: 2px solid rgba(16, 16, 16, 0.05);
+	font-size: 12px;
+	font-weight: 600;
+	color: rgba(16, 16, 16, 0.8);
+
+	&:hover {
+		background-color: rgba(16, 16, 16, 0.1);
+		color: rgba(16, 16, 16, 0.9);
+	}
+
+	&:last-child {
+		margin-right: 0;
+	}
+	
 }

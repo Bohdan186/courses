@@ -10,52 +10,16 @@
 	bottom: 0;
 }
 
-.hover-scale {
-	
-	&:hover {
-		
-		.img-inner {
-			transform: scale(1.1);
-		}
-	}
-
-	.img-wrapper {
-		overflow: hidden;
-	}
-
-	.img-inner {
-		transition: $transition;
-
-		img {
-			width: 100%;
-		}
-	}
-}
-
-.spacing-row-col-10 {	
-	margin-left: -10px;
-	margin-right: -10px;
-
-	> [class*="col-"] {
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-}
-
 .spacing-col-10 {
 		
 	margin-left: -10px;
 	margin-right: -10px;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 
 	> [class*="col-"] {
 		padding-left: 10px;
 		padding-right: 10px;
 		margin-bottom: 20px;
-
-		&:last-child {
-			margin-bottom: 0;
-		}
 	}
 
 }
@@ -162,13 +126,15 @@
 
 .slider {
 	padding-top: 100px;
-	margin-bottom: 146px;
+	margin-bottom: 100px;
 
 	.title {
 		margin-bottom: 40px;
+		max-width: 530px;
 
 		h2 {
 			text-transform: capitalize;
+			font-size: 70px;
 		}
 	}
 
@@ -196,10 +162,11 @@
 // ------------------------------------------
 
 .photo-collections {
-	margin-bottom: 120px;
+	margin-bottom: 100px;
 
 	.title {
 		margin-bottom: 40px;
+		max-width: 420px;
 
 		h3 {
 			margin-bottom: 18px;
@@ -217,7 +184,7 @@
 	border-bottom: 1px solid rgba(16, 16, 16, 0.1);
 
 	.title {
-		margin-bottom: 20px;
+		margin-bottom: 40px;
 	}
 
 	.my-clients-text {
@@ -257,6 +224,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	padding: 0;
 	margin: 0;
 	list-style: none;
@@ -467,23 +435,206 @@
 	background: url(../img/p-blog-2.jpg) center / cover no-repeat;
 	min-height: 440px;
 	border-radius: 5px;
+	margin-bottom: 40px;
 
 	.content {
 		padding: 30px;
-		max-width: 390px;
+		max-width: 450px;
 
 		.button,
 		h3 {
 			margin-bottom: 15px;
+			text-transform: capitalize;
 		}
 	}
 
 	.meta-data {
 		display: flex;
 		align-items: center;
+		font-size: 13px;
+
+		.author-title {
+			margin-right: 11px;
+		}
 		
 		span {
 			opacity: .5;
 		}
+	}
+}
+
+// ------------------------------------------
+// MY POST
+// ------------------------------------------
+
+//**** POST BODY ****//
+
+.post-body {
+
+	.img-wrapper {
+
+		img {
+			width: 100%;
+		}
+	}
+}
+
+blockquote {
+	margin-bottom: 40px;
+}
+
+.article {
+	margin-bottom: 80px;
+
+	img {
+		border-radius: 5px;
+	}
+}
+
+.article-footer {
+	border-top: 1px solid rgba(16, 16, 16, 0.05);
+	padding-top: 20px;
+}
+
+.article-footer-top,
+.article-footer-bottom {
+	display: flex;
+	justify-content: space-between;
+}
+
+.article-footer-top {
+	margin-bottom: 63px;
+}
+
+.tags-wrapper {
+	display: flex;
+	align-items: center;
+	margin-right: 10px;
+	overflow-y: hidden;
+}
+
+.previous-post,
+.next-post {
+	position: relative;
+	max-width: 410px;
+    display: flex;
+    align-items: center;
+	border-radius: 5px;
+	transition: $transition;
+
+	.img-wrapper {
+		max-width: 100px;
+
+		img {
+			border-radius: 5px;
+			height: 100px;
+			object-fit: cover;
+		}
+	}
+
+	.text-wrapper {
+		
+		h5 {
+			margin-bottom: 12px;
+			font-weight: 500;
+			color: #373839;
+		}
+
+		.subtitle {
+			margin-bottom: 0;
+			font-family: "Cabin", sans-serif;
+			font-weight: 600;
+			color: rgba(16, 16, 16, 0.4);
+
+			i {
+				font-size: 15px;
+			}
+		}
+	}
+}
+
+.previous-post {
+	margin-right: 10px;
+
+	&:hover {
+		box-shadow: 0px 5px 20px 0px rgb(0 0 0 / 10%);
+
+		.text-wrapper {
+	
+			.subtitle {
+				color: $primary-color;
+			}
+		}
+	}
+
+	.img-wrapper {
+		margin-right: 20px;
+	}
+
+	.text-wrapper {
+		text-align: left;
+		padding-right: 20px;
+
+		.subtitle {
+
+			i {
+				margin-right: 5px;
+			}
+		}
+	}
+}
+
+.next-post {
+	margin-left: 10px;
+
+	&:hover {
+		box-shadow: 0px 5px 20px 0px rgb(0 0 0 / 10%);
+		
+		.text-wrapper {
+			margin-left: 20px;
+	
+			.subtitle {
+				color: $primary-color;
+			}
+		}
+	}
+
+	.img-wrapper {
+		margin-left: 20px;
+	}
+
+	.text-wrapper {
+		text-align: right;
+
+		.subtitle {
+
+			i {
+				margin-left: 5px;
+			}
+		}
+	}
+}
+
+// ------------------------------------------
+// comments
+// ------------------------------------------
+
+.comments {
+	margin-bottom: 60px;
+
+	.title {
+		margin-bottom: 20px;
+	}
+
+	label {
+		padding-bottom: 15px;
+
+		&:last-child {
+			padding-bottom: 0;
+		}
+	}
+
+	span {
+		color: #E44242;
 	}
 }

@@ -9,3 +9,25 @@
 	left: 0;
 	right: 0;
 }
+
+@mixin hover-scale {
+	
+	&:hover {
+		
+		.img-inner {
+			transform: scale(1.1);
+		}
+	}
+
+	.img-wrapper {
+		overflow: hidden;
+	}
+
+	.img-inner {
+		transition: $transition;
+
+		img {
+			width: 100%;
+		}
+	}
+}

@@ -51,7 +51,6 @@ h6 {
 	font-size: 18px;
 }
 
-
 // ------------------------------------------
 // PARAGRAPHS
 // ------------------------------------------
@@ -84,7 +83,7 @@ u {
 // ------------------------------------------
 
 article {
-	
+
 	p {
 		margin-bottom: 30px;
 
@@ -94,19 +93,18 @@ article {
 	}
 }
 
-
 // ------------------------------------------
 // BLOCK QUOTES
 // ------------------------------------------
 
 blockquote {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	padding: 40px 60px 20px 60px;
-    border-top: 1px solid rgba(16,16,16,.05);
-    border-bottom: 1px solid rgba(16,16,16,.05);
+	border-top: 1px solid rgba(16,16,16,.05);
+	border-bottom: 1px solid rgba(16,16,16,.05);
 	text-align: center;
 
 	.post-label {
@@ -129,7 +127,6 @@ blockquote {
 		color:rgba(16, 16, 16, 0.4);
 	}
 }
-
 
 // ------------------------------------------
 // LINKS
@@ -175,7 +172,8 @@ th {
 	font-weight: 600;
 }
 
-th, td {
+th,
+td {
 	padding: 5px 15px;	
 	border-right: 1px solid rgba(16, 16, 16, 0.1);
 
@@ -184,12 +182,12 @@ th, td {
 	}
 }
 
-
 // ------------------------------------------
 // LISTS
 // ------------------------------------------
 
-ul, ol {
+ul,
+ol {
 	padding-left: 40px;
 	margin-bottom: 40px;
 }
@@ -226,9 +224,7 @@ textarea{
 	border: 1px solid rgba(16, 16, 16, 0.1);
 	border-radius: 5px;
 	outline: none;
-	
 }
-
 
 input[type=email],
 input[type=number],
@@ -247,6 +243,10 @@ select {
 label {
 	display: inline-block;
 	font-weight: 600;
+
+	span {
+		color: #E44242;
+	}
 }
 
 textarea {
@@ -266,10 +266,10 @@ button,
 	border: none;
 	border-radius: 5px;
 	outline: none;
+	background-color: $primary-color;
 	text-align: center;
 	font-size: 15px;
 	font-weight: 600;
-	background-color: $primary-color;
 	color: #fff;
 	text-decoration: none;
 	text-transform: capitalize;
@@ -279,7 +279,6 @@ button,
 		background-color: darken($color: $primary-color, $amount: 20%);
 	}
 }
-
 
 // ------------------------------------------
 // COLOR SCHEME
@@ -293,7 +292,7 @@ button,
 	}
 
 	p, ul {
-		color:  rgba(255, 255, 255, 1);
+		color: rgba(255, 255, 255, 1);
 	}
 
 	input[type=text], input::placeholder{

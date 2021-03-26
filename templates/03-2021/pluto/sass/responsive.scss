@@ -3,6 +3,7 @@
 // ------------------------------------------------------------------------------------------------
 
 @media (max-width: 1200px) {
+
 	.spacing-xl-bottom-20 {
 
 		> [class*="col-"] {
@@ -16,17 +17,18 @@
 }
 
 @media (max-width: 1100px) {
+
 	.previous-post,
 	.next-post {
-		
+
 		h5 {
 			display: none;
 		}
 	}
 }
 
-
 @media (max-width: 992px) {
+
 	.header-col-left {
 		padding-right: 15px;
 		flex-grow: 1;
@@ -62,17 +64,6 @@
 }
 
 @media (max-width: 768px) {
-	// ------------------------------------------
-	// PARAGRAPHS
-	// ------------------------------------------
-
-	// p {
-	// 	margin-bottom: 15px;
-
-	// 	&:last-child {
-	// 		margin-bottom: 0;
-	// 	}
-	// }
 
 	.burger {
 		display: block;
@@ -83,6 +74,7 @@
 	.header-col-center {
 		display: none;
 	}
+
 	.scroll-to-top {
 		bottom: 15px;
 		right: 20px;
@@ -95,13 +87,13 @@
 			padding-bottom: 40px;
 		}
 	}
-	
+
 	.brands-list {
 		justify-content: center;
 	}
 
 	blockquote {
-	
+
 		p {
 			font-size: 18px;
 		}
@@ -167,7 +159,7 @@
 			}
 		}
 	}
-	
+
 	blockquote {
 		padding: 20px;
 	}

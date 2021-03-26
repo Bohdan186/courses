@@ -4785,15 +4785,18 @@ th {
   font-weight: 600;
 }
 
-th, td {
+th,
+td {
   padding: 5px 15px;
   border-right: 1px solid rgba(16, 16, 16, 0.1);
 }
-th:last-child, td:last-child {
+th:last-child,
+td:last-child {
   border-right: 0;
 }
 
-ul, ol {
+ul,
+ol {
   padding-left: 40px;
   margin-bottom: 40px;
 }
@@ -4846,6 +4849,9 @@ label {
   display: inline-block;
   font-weight: 600;
 }
+label span {
+  color: #E44242;
+}
 
 textarea {
   padding: 20px;
@@ -4860,10 +4866,10 @@ button,
   border: none;
   border-radius: 5px;
   outline: none;
+  background-color: #36B1F5;
   text-align: center;
   font-size: 15px;
   font-weight: 600;
-  background-color: #36B1F5;
   color: #fff;
   text-decoration: none;
   text-transform: capitalize;
@@ -4890,10 +4896,10 @@ button:hover,
 }
 
 .section-title {
-  margin-bottom: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 40px;
 }
 .section-title .arrows {
   display: flex;
@@ -4916,6 +4922,10 @@ button:hover,
   padding-top: 60px;
   padding-bottom: 60px;
   margin-bottom: 0;
+}
+.section-title.title-large h3 {
+  margin-bottom: 0;
+  margin-right: 20px;
 }
 .section-title.title-small {
   padding-top: 38px;
@@ -5290,6 +5300,30 @@ button:hover,
   margin-right: 0;
 }
 
+.accordion {
+  padding: 20px 10px;
+  border-bottom: 1px solid rgba(16, 16, 16, 0.05);
+}
+.accordion h6 {
+  margin-bottom: 0;
+  font-weight: 400;
+}
+.accordion p:last-child {
+  margin-bottom: 0;
+}
+.accordion.open .accordion-title {
+  margin-bottom: 20px;
+}
+.accordion .accordion-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.accordion .accordion-title i {
+  font-size: 24px;
+  color: rgba(16, 16, 16, 0.6);
+}
+
 .absolute {
   position: absolute;
   top: 0;
@@ -5336,13 +5370,13 @@ button:hover,
 }
 
 .header-col-left {
-  padding-right: 68px;
   flex-grow: 0;
+  padding-right: 68px;
 }
 
 .header-col-right {
-  padding-left: 15px;
   justify-content: flex-end;
+  padding-left: 15px;
 }
 
 .primary-menu {
@@ -5401,7 +5435,6 @@ button:hover,
 
 .subtitle {
   margin-bottom: 40px;
-  line-height: 1.3;
 }
 
 .slider {
@@ -5409,9 +5442,9 @@ button:hover,
   margin-bottom: 100px;
 }
 .slider h2 {
-  text-transform: capitalize;
-  font-size: 70px;
   margin-bottom: 40px;
+  font-size: 70px;
+  text-transform: capitalize;
 }
 .slider .btn-wrapper .button:first-child {
   margin-right: 19px;
@@ -5513,11 +5546,11 @@ button:hover,
   margin-right: 6px;
 }
 .footer .bottom-footer {
-  padding-top: 20px;
-  padding-bottom: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .footer .bottom-footer .logo-footer {
   padding-right: 15px;
@@ -5558,10 +5591,6 @@ button:hover,
 .blog {
   margin-bottom: 120px;
 }
-.blog h3 {
-  margin-bottom: 0;
-  margin-right: 20px;
-}
 
 .blog-quotes {
   position: relative;
@@ -5585,21 +5614,21 @@ button:hover,
 }
 .blog-quotes .content {
   position: relative;
-  z-index: 1;
-  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  z-index: 1;
+  padding: 20px;
   height: 100%;
 }
 .blog-quotes .content.quote p {
+  margin-bottom: 30px;
   font-family: "Cabin", sans-serif;
   font-size: 18px;
-  margin-bottom: 30px;
 }
 .blog-quotes .content.quote .author {
-  font-style: italic;
   margin-bottom: 0;
+  font-style: italic;
 }
 
 .post-title {
@@ -5611,8 +5640,8 @@ button:hover,
   margin-bottom: 40px;
 }
 .post-title .content {
-  padding: 30px;
   max-width: 450px;
+  padding: 30px;
 }
 .post-title .content .button,
 .post-title .content h3 {
@@ -5640,6 +5669,7 @@ button:hover,
 }
 .my-post img {
   border-radius: 5px;
+  width: 100%;
 }
 
 .post-body .img-wrapper img {
@@ -5676,9 +5706,9 @@ button:hover,
 .previous-post,
 .next-post {
   position: relative;
-  max-width: 410px;
   display: flex;
   align-items: center;
+  max-width: 410px;
   border-radius: 5px;
   transition: all 0.4s ease;
 }
@@ -5760,9 +5790,6 @@ button:hover,
 }
 .comments-sections label:last-child {
   padding-bottom: 0;
-}
-.comments-sections span {
-  color: #E44242;
 }
 
 .widget {
@@ -5882,6 +5909,81 @@ button:hover,
 }
 .sidebar .banner .button:hover {
   color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-me {
+  margin-bottom: 130px;
+}
+.contact-me h3 {
+  text-transform: capitalize;
+}
+.contact-me form p {
+  margin-bottom: 15px;
+  color: rgba(16, 16, 16, 0.8);
+  font-size: 18px;
+  font-weight: 400;
+}
+.contact-me form p span {
+  color: #E44242;
+}
+
+.checkbox-wrapper {
+  white-space: nowrap;
+  overflow-y: hidden;
+}
+
+.contact-me-checkbox {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 13px 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(16, 16, 16, 0.8);
+  cursor: pointer;
+  margin-right: 15px;
+  transition: all 0.4s ease;
+}
+.contact-me-checkbox:last-child {
+  margin-right: 0;
+}
+.contact-me-checkbox:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.contact-me-checkbox.disable {
+  color: rgba(16, 16, 16, 0.5);
+}
+.contact-me-checkbox i {
+  font-size: 15px;
+  color: #88ba62;
+  margin-left: 5px;
+}
+
+.accordion-wrapper .accordion:first-child {
+  border-top: 1px solid rgba(16, 16, 16, 0.05);
+}
+
+.reply-time {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.reply-time span {
+  color: rgba(16, 16, 16, 0.9);
+}
+
+.green-circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #92e93b;
+  margin-right: 6px;
+}
+
+.bottom-line {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 @media (max-width: 1200px) {

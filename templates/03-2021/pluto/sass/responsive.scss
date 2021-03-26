@@ -32,21 +32,8 @@
 		flex-grow: 1;
 	}
 
-	.slider {
-		padding-top: 50px;
-		margin-bottom: 100px;
-
-		.title {
-			max-width: 100%;
-		}
-	}
-
 	.photo-collections {
 		margin-bottom: 100px;
-
-		.title {
-			max-width: 100%;
-		}
 	}
 
 	.my-clients {
@@ -76,24 +63,16 @@
 
 @media (max-width: 768px) {
 	// ------------------------------------------
-	// HEADERS
-	// ------------------------------------------
-
-	h1,h2,h3,h4,h5,h6 {
-		margin-bottom: 20px;
-	}
-	
-	// ------------------------------------------
 	// PARAGRAPHS
 	// ------------------------------------------
 
-	p {
-		margin-bottom: 15px;
+	// p {
+	// 	margin-bottom: 15px;
 
-		&:last-child {
-			margin-bottom: 0;
-		}
-	}
+	// 	&:last-child {
+	// 		margin-bottom: 0;
+	// 	}
+	// }
 
 	.burger {
 		display: block;
@@ -130,6 +109,19 @@
 }
 
 @media (max-width: 576px) {
+
+	.broad-limitation,
+	.narrow-limitation {
+		max-width: 100%;
+	}
+
+	.slider {
+	
+		h2 {
+			font-size: 42px;
+		}
+	}
+
 	.contact-me-wrapper {
 			
 		.button, .social-links {
